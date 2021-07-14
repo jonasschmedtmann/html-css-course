@@ -30,7 +30,7 @@ Use starter code to start each section, and **final code to compare it with your
 
 ### Q6: Where is the resources page you keep mentioning?
 
-**A:** It's on my website at <http://codingheroes.io/resources>. You can subscribe for updates 😉
+**A:** It's on my website at <https://codingheroes.io/resources>. You can subscribe for updates 😉
 
 ### Q7: Videos don't load, can you fix it?
 
