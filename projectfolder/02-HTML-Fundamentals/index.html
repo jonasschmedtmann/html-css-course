@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>The Basic Langauge of The Web: HTML</title>
+		<title class="article-title">The Basic Language of The Web: HTML</title>
 		<!-- Another CSS option is the style element and declare your CSS in there.  This can work, but if you have a lot of CSS code, the html file becomes a longigated pain in the ass
 		<style>
 			h1 {
@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<!-- Comment Block, this his how you do comments in html-->
-		<header>
+		<header class="main-header">
 			<!-- We can do inline CSS style like below
 				<h1 style="color: blue">	
 					But we dont want do this
@@ -33,7 +33,7 @@
 			<header>
 				<h2>The Basic Langauge of The Web: HTML</h2>
 				<img src="./imgs/laura-jones.jpg" src="the person who wrote this" width="50" height="50" />
-				<p>Posted by <strong>Laura Jones </strong> on Monday, June 21st 2027</p>
+				<p id="author">Posted by <strong>Laura Jones </strong> on Monday, June 21st 2027</p>
 				<br />
 
 				<img src="./imgs/post-img.jpg" alt="This is the voice of Satan" width="500" height="200" />
@@ -55,7 +55,7 @@
 			</p>
 			<p>In HTML, each element is made up of 3 parts:</p>
 			<ol>
-				<li>The opening tag</li>
+				<li class="first-li">The opening tag</li>
 				<li>The closing tag</li>
 				<li>The actual element</li>
 				<li>You can learn more at the MDN Web Docs.</li>
@@ -71,7 +71,7 @@
 			<p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
 
 			<ul>
-				<li>To be able to use the fundamental web dev language</li>
+				<li class="first-li">To be able to use the fundamental web dev language</li>
 				<li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
 				<li>To build web applications</li>
 				<li>To impress friends To have fun 😃</li>
@@ -79,29 +79,31 @@
 			<p>Hopefully you learned something new here. See you next time!</p>
 		</article>
 		<!--- Aside element is used for secondary information designed to compliment information-->
-		<asie>
-			<h3><strong>Related Post</strong></h3>
-			<ul>
+		<aside class="related-aside">
+			<h4><strong>Related Posts</strong></h4>
+			<ul class="related-list">
 				<li>
 					<img src="imgs/related-1.jpg" alt="How to Learn Web Development" height="50" width="50" />
 					<a href="#"> How to Learn Web Development</a>
-					<p>By Jonas Schmeltmann</p>
+					<p class="related-author">By Jonas Schmeltmann</p>
 				</li>
 				<br />
 				<li>
 					<img src="imgs/related-2.jpg" alt="Unknown Power of CSS" height="50" width="50" />
 					<a href="#"> The Uknown Power of CSS</a>
-					<p>By Jonas Schmeltmann</p>
+					<p class="related-author">By Jonas Schmeltmann</p>
 				</li>
 				<br />
 				<li>
 					<img src="imgs/related-3.jpg" alt="Why Javascript is Awsome" height="50" width="50" />
 					<a href="#"> Why Javascript is Awsome</a>
-					<p>By Jonas Schmeltmann</p>
+					<p class="related-author">By Jonas Schmeltmann</p>
 				</li>
 			</ul>
-		</asie>
+		</aside>
 
-		<footer>Copyright &copy 2017 by The Code Magazine</footer>
+		<footer>
+			<p id="copyright">Copyright &copy 2017 by The Code Magazine</p>
+		</footer>
 	</body>
 </html>

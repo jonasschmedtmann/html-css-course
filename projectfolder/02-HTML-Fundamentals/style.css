@@ -1,3 +1,125 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	font-family: sans-serif;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+
 h1 {
-	color: blue;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 40px;
+	border-bottom: 5px solid #1098ad;
+}
+
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+p {
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+li {
+	font-size: 20px;
+}
+
+/* footer p {
+	font-size: 16px;
+} */
+/* article header p {
+	font-style: italic;
+} */
+
+#author {
+	font-style: italic;
+	font-size: 18px;
+}
+
+#copyright {
+	font-style: italic;
+	font-size: 16px;
+}
+
+.related-author {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.related-list p {
+	list-style: none;
+}
+
+.main-header {
+	background-color: #f7f7f7;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+	font-weight: bold;
+} */
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+/* style based on odd number of item, odd can be changed to even or a specific number 
+li:nth-child(odd) {
+	color: red;
+}
+*/
+
+/* 
+This selector selects the first child of the article, but will only color it black if its paragraph element, otherwise this does nothing.  In the case of our index, the <article> was the first child
+article p:first-child {
+	color: black;
+} */
+
+/* Styling Hyperlinks */
+/* Style a elements with an href attrivute on them*/
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	/* color: #777; */
+	color: #1098ad;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline orangered;
+}
+/* The state of actively clicking */
+a:active {
+	background-color: black;
+	font-style: italic;
 }
