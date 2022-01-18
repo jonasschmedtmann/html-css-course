@@ -77,3 +77,49 @@ aside {
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 }
+
+/* .first-li {
+	font-weight: bold;
+} */
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+/* style based on odd number of item, odd can be changed to even or a specific number 
+li:nth-child(odd) {
+	color: red;
+}
+*/
+
+/* 
+This selector selects the first child of the article, but will only color it black if its paragraph element, otherwise this does nothing.  In the case of our index, the <article> was the first child
+article p:first-child {
+	color: black;
+} */
+
+/* Styling Hyperlinks */
+/* Style a elements with an href attrivute on them*/
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	/* color: #777; */
+	color: #1098ad;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline orangered;
+}
+/* The state of actively clicking */
+a:active {
+	background-color: black;
+	font-style: italic;
+}
