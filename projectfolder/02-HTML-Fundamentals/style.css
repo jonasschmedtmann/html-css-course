@@ -1,11 +1,6 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-	font-family: sans-serif;
+body {
 	color: #444;
+	font-family: sans-serif;
 }
 
 h1,
@@ -123,3 +118,38 @@ a:active {
 	background-color: black;
 	font-style: italic;
 }
+
+/* Resolving conflicts */
+/*
+footer p {
+	color: blue !important;
+}
+*/
+
+/* #copyright {
+	color: red;
+} */
+
+/* .copyright {
+	color: blue;
+}
+
+.text {
+	color: yellow;
+}
+
+footer p {
+	color: green;
+} */
+
+/* In this situation, this falls to the hierarchy of importance.  ID (#) will always have priority over classes (.) and child elements (footer p).  In a situation where both have the same hierarchy (the case with .copyright and .text) then the last one will become the priority, in this case the text became yellow instead of blue
+
+Priority List 1 -> 10
+High to Low
+1 -> !important
+2 -> inline styling
+3 -> #
+4 -> .
+5 -> child element
+
+*/
