@@ -1,0 +1,76 @@
+body {
+	font-family: sans-serif;
+	border: black 5px solid;
+	line-height: 1.4;
+}
+
+.product-name {
+	background: #f7f7f7;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.product-details {
+	text-transform: uppercase;
+}
+
+.shipping {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #777;
+}
+
+.price {
+	font-size: 25px;
+}
+
+/* Link styling */
+.homepage:link {
+	color: #1098ad;
+}
+
+.homepage:visited {
+	color: #1098ad;
+}
+.homepage:hover {
+	color: orangered;
+	text-decoration: none orangred;
+}
+
+a:link {
+	color: black;
+	text-decoration: underline black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+/* Other stuff */
+
+button {
+	background-color: black;
+	text-transform: uppercase;
+	color: white;
+	border: black solid 5px;
+	font-size: 18px;
+}
+
+button:hover {
+	color: black;
+	background-color: white;
+	border: white solid 5px;
+	/* The above can be consolidated down into: 
+  background-color: white
+  filter:invert(100%) 
+  */
+}
+
+ul li {
+	list-style: square;
+}

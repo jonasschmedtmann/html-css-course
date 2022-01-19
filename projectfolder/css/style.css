@@ -153,3 +153,7 @@ High to Low
 5 -> child element
 
 */
+
+nav a:link {
+	font-size: 18px;
+}
