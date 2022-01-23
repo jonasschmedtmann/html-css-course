@@ -8,6 +8,7 @@ body {
 	border-top: 5px solid #1098ad;
 	color: #444;
 	font-family: sans-serif;
+	position: relative;
 }
 
 .container {
@@ -48,6 +49,8 @@ aside {
 	width: 500px;
 }
 
+/* SMALLER ELEMENTS */
+
 h1,
 h2,
 h3 {
@@ -62,7 +65,7 @@ h1 {
 
 h2 {
 	font-size: 40px;
-	border-bottom: 5px solid #1098ad;
+	position: relative;
 	margin-bottom: 30px;
 }
 
@@ -166,6 +169,20 @@ a:active {
 	font-style: italic;
 }
 
+nav a:link {
+	/* background-color: orangered;
+	margin: 20px;
+	padding: 20px;
+	display: block; */
+	margin-right: 30px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+nav a:link:last-child {
+	margin-right: 0px;
+}
+
 /* Resolving conflicts */
 /*
 footer p {
@@ -203,4 +220,35 @@ High to Low
 .post-img {
 	width: 100%;
 	height: auto;
+}
+
+button {
+	font-size: 22px;
+	padding: 20px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+h1::first-letter {
+	font-style: normal;
+	margin-right: 5px;
+}
+
+h3 + p {
+	/* color: red; */
+}
+
+h2::after {
+	content: 'TOP';
+	background-color: #ffe70e;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -10px;
+	right: -25px;
 }

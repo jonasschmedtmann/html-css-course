@@ -15,14 +15,25 @@ p {
 .product-container {
 	border: black 4px solid;
 	width: 825px;
-	margin: 5 0px auto;
+	margin: 25px auto;
+	position: relative;
 }
-
 .product-name {
 	background: #f7f7f7;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 20px 0;
+}
+
+.product-name::after {
+	content: 'SALE';
+	position: absolute;
+	top: 25px;
+	left: -25px;
+	background: red;
+	color: white;
+	letter-spacing: 2px;
+	padding: 5px 5px;
 }
 
 .product-details {
@@ -104,4 +115,13 @@ nav {
 	background-color: #ad2510;
 	opacity: 0.8;
 	justify-content: center;
+}
+
+.colored-boxes li {
+	display: block-inline;
+}
+
+.black {
+	background-color: black;
+	border: solid 5px black;
 }
