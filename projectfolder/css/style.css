@@ -1,6 +1,51 @@
+/* Global reset, this resets everything to a starting point of 0 so you can customize the padding and margin at an individual level */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	border-top: 5px solid #1098ad;
 	color: #444;
 	font-family: sans-serif;
+}
+
+.container {
+	width: 800px;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin: 0 auto;
+}
+
+nav a:link {
+	font-size: 18px;
+}
+
+article {
+	margin-bottom: 60px;
+}
+.main-header {
+	background-color: #f7f7f7;
+	/* padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px; */
+	padding: 20px 40px;
+	margin-bottom: 60px;
+	height: 80px;
+}
+
+.post-header {
+	margin-bottom: 40px;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	/* padding-top: 50px;
+	padding-bottom: 50px; */
+	padding: 50px 0;
+	width: 500px;
 }
 
 h1,
@@ -18,10 +63,13 @@ h1 {
 h2 {
 	font-size: 40px;
 	border-bottom: 5px solid #1098ad;
+	margin-bottom: 30px;
 }
 
 h3 {
 	font-size: 30px;
+	margin-bottom: 20px;
+	margin-top: 40px;
 }
 h4 {
 	font-size: 20px;
@@ -31,10 +79,18 @@ h4 {
 p {
 	font-size: 22px;
 	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+ul,
+ol {
+	margin-left: 50px;
+	margin-bottom: 20px;
 }
 
 li {
 	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 /* footer p {
@@ -63,26 +119,17 @@ li {
 	list-style: none;
 }
 
-.main-header {
-	background-color: #f7f7f7;
-}
-
-aside {
-	background-color: #f7f7f7;
-	border-top: 5px solid #1098ad;
-	border-bottom: 5px solid #1098ad;
-}
-
 /* .first-li {
 	font-weight: bold;
 } */
-
+/* 
 li:first-child {
 	font-weight: bold;
-}
+} */
 
 li:last-child {
-	font-style: italic;
+	/* font-style: italic; */
+	margin-bottom: 0px;
 }
 /* style based on odd number of item, odd can be changed to even or a specific number 
 li:nth-child(odd) {
@@ -153,7 +200,7 @@ High to Low
 5 -> child element
 
 */
-
-nav a:link {
-	font-size: 18px;
+.post-img {
+	width: 100%;
+	height: auto;
 }

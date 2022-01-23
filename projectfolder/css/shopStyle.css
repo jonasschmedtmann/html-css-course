@@ -1,17 +1,33 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	font-family: sans-serif;
-	border: black 5px solid;
 	line-height: 1.4;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.product-container {
+	border: black 4px solid;
+	width: 825px;
+	margin: 5 0px auto;
 }
 
 .product-name {
 	background: #f7f7f7;
 	text-transform: uppercase;
 	text-align: center;
+	padding: 20px 0;
 }
 
 .product-details {
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .shipping {
@@ -22,6 +38,7 @@ body {
 
 .price {
 	font-size: 25px;
+	margin-bottom: 0px;
 }
 
 /* Link styling */
@@ -54,23 +71,37 @@ a:hover {
 /* Other stuff */
 
 button {
+	width: 100%;
 	background-color: black;
 	text-transform: uppercase;
-	color: white;
 	border: black solid 5px;
+	color: white;
 	font-size: 18px;
 }
 
 button:hover {
 	color: black;
 	background-color: white;
-	border: white solid 5px;
+	border: black solid 5px;
 	/* The above can be consolidated down into: 
   background-color: white
   filter:invert(100%) 
   */
 }
 
+ul {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
 ul li {
 	list-style: square;
+	margin-bottom: 10px;
+}
+
+nav {
+	border: #1098ad solid 5px;
+	background-color: #ad2510;
+	opacity: 0.8;
+	justify-content: center;
 }
