@@ -1,6 +1,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: content-box;
 }
 
 body {
@@ -34,6 +35,9 @@ p {
 	color: white;
 	letter-spacing: 2px;
 	padding: 5px 5px;
+	font-size: 12px;
+	width: 80px;
+	text-align: center;
 }
 
 .product-details {
@@ -117,11 +121,67 @@ nav {
 	justify-content: center;
 }
 
-.colored-boxes li {
-	display: block-inline;
+.colored-boxes > div {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	margin-bottom: 10px;
 }
 
 .black {
 	background-color: black;
 	border: solid 5px black;
+	width: 5px;
+	height: 5px;
+}
+.blue {
+	background-color: blue;
+	border: solid 5px blue;
+	width: 5px;
+	height: 5px;
+}
+.red {
+	background-color: red;
+	border: solid 5px red;
+	width: 5px;
+	height: 5px;
+}
+
+.yellow {
+	background-color: yellow;
+	border: solid 5px yellow;
+	width: 5px;
+	height: 5px;
+}
+.green {
+	background-color: #00d500;
+	border: solid 5px #00d500;
+	width: 5px;
+	height: 5px;
+}
+.brown {
+	background-color: brown;
+	border: solid 5px brown;
+	width: 5px;
+	height: 5px;
+}
+
+/* Floats */
+.product-description-container {
+	background-color: red;
+	width: 240px;
+	height: 250px;
+	float: left;
+}
+
+.product-info-container {
+	float: right;
+}
+
+.product-details-container {
+	background-color: yellow;
+	width: 240px;
+	height: 250px;
+	float: right;
 }
