@@ -12,10 +12,13 @@ body {
 p {
 	margin-bottom: 20px;
 }
+.product-description {
+	clear: both;
+}
 
 .product-container {
 	border: black 4px solid;
-	width: 825px;
+	width: 900px;
 	margin: 25px auto;
 	position: relative;
 }
@@ -43,17 +46,20 @@ p {
 .product-details {
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 
 .shipping {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #777;
+	float: right;
 }
 
 .price {
 	font-size: 25px;
 	margin-bottom: 0px;
+	float: left;
 }
 
 /* Link styling */
@@ -168,20 +174,25 @@ nav {
 }
 
 /* Floats */
-.product-description-container {
-	background-color: red;
-	width: 240px;
-	height: 250px;
+.product-image {
 	float: left;
-}
-
-.product-info-container {
-	float: right;
+	margin-right: 40px;
 }
 
 .product-details-container {
-	background-color: yellow;
-	width: 240px;
+	/* background-color: yellow; */
+	width: 243px;
 	height: 250px;
-	float: right;
+	float: left;
+	padding: 0px 40px;
+	/* margin-top: 20px; */
+}
+
+.product-info-container {
+	width: 243px;
+	/* background-color: blue; */
+	float: left;
+	height: 250px;
+	margin-right: 40px;
+	/* margin-top: 20px; */
 }
