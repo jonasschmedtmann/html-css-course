@@ -1,6 +1,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	box-sizing: content-box;
 }
 
 body {
@@ -11,10 +12,13 @@ body {
 p {
 	margin-bottom: 20px;
 }
+.product-description {
+	clear: both;
+}
 
 .product-container {
 	border: black 4px solid;
-	width: 825px;
+	width: 900px;
 	margin: 25px auto;
 	position: relative;
 }
@@ -34,22 +38,28 @@ p {
 	color: white;
 	letter-spacing: 2px;
 	padding: 5px 5px;
+	font-size: 12px;
+	width: 80px;
+	text-align: center;
 }
 
 .product-details {
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 
 .shipping {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #777;
+	float: right;
 }
 
 .price {
 	font-size: 25px;
 	margin-bottom: 0px;
+	float: left;
 }
 
 /* Link styling */
@@ -117,11 +127,72 @@ nav {
 	justify-content: center;
 }
 
-.colored-boxes li {
-	display: block-inline;
+.colored-boxes > div {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	margin-bottom: 10px;
 }
 
 .black {
 	background-color: black;
 	border: solid 5px black;
+	width: 5px;
+	height: 5px;
+}
+.blue {
+	background-color: blue;
+	border: solid 5px blue;
+	width: 5px;
+	height: 5px;
+}
+.red {
+	background-color: red;
+	border: solid 5px red;
+	width: 5px;
+	height: 5px;
+}
+
+.yellow {
+	background-color: yellow;
+	border: solid 5px yellow;
+	width: 5px;
+	height: 5px;
+}
+.green {
+	background-color: #00d500;
+	border: solid 5px #00d500;
+	width: 5px;
+	height: 5px;
+}
+.brown {
+	background-color: brown;
+	border: solid 5px brown;
+	width: 5px;
+	height: 5px;
+}
+
+/* Floats */
+.product-image {
+	float: left;
+	margin-right: 40px;
+}
+
+.product-details-container {
+	/* background-color: yellow; */
+	width: 243px;
+	height: 250px;
+	float: left;
+	padding: 0px 40px;
+	/* margin-top: 20px; */
+}
+
+.product-info-container {
+	width: 243px;
+	/* background-color: blue; */
+	float: left;
+	height: 250px;
+	margin-right: 40px;
+	/* margin-top: 20px; */
 }

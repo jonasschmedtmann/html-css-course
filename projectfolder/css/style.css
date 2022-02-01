@@ -2,6 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-	width: 800px;
+	width: 1200px;
 	/* margin-left: auto;
 	margin-right: auto; */
 	margin: 0 auto;
@@ -32,7 +33,7 @@ article {
 	padding-right: 40px; */
 	padding: 20px 40px;
 	margin-bottom: 60px;
-	height: 80px;
+	/* height: 80px; */
 }
 
 .post-header {
@@ -43,10 +44,7 @@ aside {
 	background-color: #f7f7f7;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
-	/* padding-top: 50px;
-	padding-bottom: 50px; */
-	padding: 50px 0;
-	width: 500px;
+	padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -78,6 +76,7 @@ h4 {
 	font-size: 20px;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 30px;
 }
 p {
 	font-size: 22px;
@@ -118,8 +117,10 @@ li {
 	font-weight: bold;
 }
 
-.related-list p {
+.related-list p,
+li {
 	list-style: none;
+	margin: none;
 }
 
 /* .first-li {
@@ -236,10 +237,6 @@ h1::first-letter {
 	margin-right: 5px;
 }
 
-h3 + p {
-	/* color: red; */
-}
-
 h2::after {
 	content: 'TOP';
 	background-color: #ffe70e;
@@ -251,4 +248,47 @@ h2::after {
 	position: absolute;
 	top: -10px;
 	right: -25px;
+}
+
+/* Floats */
+
+.author-img {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.author {
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+h1 {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+article {
+	width: 825px;
+	float: left;
+}
+aside {
+	width: 300px;
+	float: right;
+}
+footer {
+	clear: both;
 }
