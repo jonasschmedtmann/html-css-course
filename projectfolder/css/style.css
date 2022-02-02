@@ -8,7 +8,7 @@
 body {
 	border-top: 5px solid #1098ad;
 	color: #444;
-	font-family: sans-serif;
+	font-family: poppins;
 	position: relative;
 }
 
@@ -176,7 +176,6 @@ nav a:link {
 	padding: 20px;
 	display: block; */
 	margin-right: 30px;
-	margin-top: 10px;
 	display: inline-block;
 }
 
@@ -250,7 +249,7 @@ h2::after {
 	right: -25px;
 }
 
-/* Floats */
+/* Floats
 
 .author-img {
 	float: left;
@@ -291,4 +290,20 @@ aside {
 }
 footer {
 	clear: both;
+} */
+
+/* Flex box */
+.main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author-box {
+	display: flex;
+	align-items: center;
+}
+.author {
+	margin-bottom: 0px;
+	margin-left: 15px;
 }
