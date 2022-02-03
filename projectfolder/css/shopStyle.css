@@ -53,13 +53,13 @@ p {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #777;
-	float: right;
+	/* float: right; */
 }
 
 .price {
 	font-size: 25px;
 	margin-bottom: 0px;
-	float: left;
+	/* float: left; */
 }
 
 /* Link styling */
@@ -175,23 +175,27 @@ nav {
 
 /* Floats */
 .product-image {
-	float: left;
+	/* float: left; */
 	margin-right: 40px;
 }
 
 .product-details-container {
 	/* background-color: yellow; */
-	width: 243px;
+	/* width: 243px; */
 	height: 250px;
-	float: left;
+	/* float: left; */
 	padding: 0px 40px;
 	/* margin-top: 20px; */
 }
 
+.shippipng-container {
+	display: flex;
+}
 .product-info-container {
-	width: 243px;
+	/* width: 243px; */
 	/* background-color: blue; */
-	float: left;
+	/* float: left; */
+
 	height: 250px;
 	margin-right: 40px;
 	/* margin-top: 20px; */
