@@ -24,7 +24,7 @@ nav a:link {
 }
 
 article {
-	margin-bottom: 60px;
+	/* margin-bottom: 60px; */
 }
 .main-header {
 	background-color: #f7f7f7;
@@ -32,7 +32,7 @@ article {
 	padding-left: 40px;
 	padding-right: 40px; */
 	padding: 20px 40px;
-	margin-bottom: 60px;
+	/* margin-bottom: 60px; */
 	/* height: 80px; */
 }
 
@@ -330,8 +330,8 @@ footer {
 	font-weight: normal;
 	font-style: italic;
 }
-
-.row {
+/* FlexBox layout */
+/* .row {
 	display: flex;
 	align-items: flex-start;
 	gap: 75px;
@@ -339,11 +339,35 @@ footer {
 }
 
 article {
-	/* flex: 0 0 825px; */
+	
 	flex: 1;
 	margin-bottom: 0px;
 }
 
 aside {
 	flex: 0 0 300px;
+} */
+
+/* CSS Grid layout */
+.container {
+	display: grid;
+	/* If you only use columns, then the row sizes are to the lengh of the container */
+	grid-template-columns: 1fr 300px;
+
+	column-gap: 75px;
+	row-gap: 60px;
+	align-items: start;
+}
+
+.main-header {
+	grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+footer {
+	grid-column: 1 /-1;
 }

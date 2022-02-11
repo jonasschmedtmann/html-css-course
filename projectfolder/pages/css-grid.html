@@ -84,11 +84,22 @@
 				display: grid;
 				grid-template-columns: 125px 200px 125px;
 				grid-template-rows: 250px 100px;
+				gap: 50px;
 
 				/* Aligning tracks inside container: 
 				distribute empty space */
 				justify-content: center;
 				justify-content: space-between;
+				align-content: center;
+
+				/* Aligning items inside cells */
+				align-items: center;
+				justify-items: center;
+			}
+
+			.el--3 {
+				align-self: end;
+				justify-self: center;
 			}
 		</style>
 	</head>
