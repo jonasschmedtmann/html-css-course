@@ -15,17 +15,14 @@ body {
 	clear: both;
 }
 
-.container {
-	/*   background-color: red; */
-	display: flex;
-	gap: 40px;
-}
-
 .product-img {
 }
 
 /* PRODUCT */
 .product {
+	display: grid;
+	grid-template-columns: 250px 1fr 1fr;
+	column-gap: 40px;
 	border: 4px solid black;
 	width: 825px;
 	margin: 50px auto;
@@ -33,6 +30,7 @@ body {
 }
 
 .product-title {
+	grid-column: 1 /-1;
 	text-align: center;
 	font-size: 22px;
 	text-transform: uppercase;
@@ -150,6 +148,7 @@ body {
 
 /* BUTTON */
 .add-cart {
+	grid-column: 1 / -1;
 	background-color: #000;
 	border: none;
 	color: #fff;
