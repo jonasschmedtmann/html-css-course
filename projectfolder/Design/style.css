@@ -6,37 +6,44 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+:root {
+	--MainColor: #087f5b;
+	--SecondaryColor: #343a40;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+	font-family: 'Poppins' sans-serif;
+	color: var(--SecondaryColor);
+	border-bottom: 8px solid var(--MainColor);
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+	width: 960px;
+	margin: 0 auto;
 }
 
 header,
 section {
-  margin-bottom: 48px;
+	margin-bottom: 48px;
 }
 
 h2 {
-  margin-bottom: 48px;
+	margin-bottom: 48px;
 }
 
 .grid-3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 80px;
 }
 
 /* ------------------------ */
@@ -45,26 +52,26 @@ h2 {
 
 /* HEADER */
 header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px;
-  margin-top: 48px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+	margin-top: 48px;
 }
 
 .header-text-box {
-  align-self: center;
+	align-self: center;
 }
 
 h1 {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .header-text {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 /* FEATURES */
@@ -72,7 +79,7 @@ img {
 }
 
 .features-title {
-  margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .features-text {
@@ -83,52 +90,71 @@ img {
 }
 
 .testimonial-box {
-  grid-column: 2 / -1;
-  align-self: center;
+	grid-column: 2 / -1;
+	align-self: center;
 }
 
 .testimonial-box h2 {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .testimonial-text {
-  font-style: italic;
-  margin-bottom: 24px;
+	font-style: italic;
+	margin-bottom: 24px;
 }
 
 /* CHAIRS */
 .chair-box {
-  padding: 24px;
+	padding: 24px;
 }
 
 h3 {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .chair-details {
-  list-style: none;
-  margin-bottom: 24px;
+	list-style: none;
+	margin-bottom: 24px;
 }
 
 .chair-details li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
 }
 
 .chair-details li:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .chair-icon {
 }
 
 .chair-price {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 footer {
-  margin-bottom: 48px;
+	margin-bottom: 48px;
+}
+/* Buttons */
+
+.btn {
+	text-decoration: none;
+}
+.btn--big {
+	border-color: var(--MainColor);
+	font-size: 18;
+	padding: 14px 28px;
+	color: white;
+	background-color: var(--MainColor);
+}
+.btn--small {
+	border-color: var(--MainColor);
+	font-size: 12;
+	padding: 14px 28px;
+	color: white;
+	background-color: var(--MainColor);
 }
