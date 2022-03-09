@@ -6,10 +6,15 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+
 /* Main Color: #087f5b
 	Grey Color: #343a40
 
 */
+:root {
+	--MainColor: #087f5b;
+	--SecondaryColor: #343a40;
+}
 
 * {
 	margin: 0;
@@ -21,10 +26,12 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
+
 	/* font-family: sans-serif; */
-	font-family: 'Poppins', sans-serif;
-	color: #343a40;
-	border-bottom: 5px solid #087f5b;
+	
+	font-family: 'Poppins' sans-serif;
+	color: var(--SecondaryColor);
+	border-bottom: 8px solid var(--MainColor);
 }
 
 .container {
@@ -47,6 +54,7 @@ h2 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 80px;
+
 }
 
 .btn:link,
