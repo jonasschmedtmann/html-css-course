@@ -63,11 +63,19 @@ h2 {
 
 	display: inline-block;
 	font-weight: 500;
+
+	border-radius: 100px;
+}
+
+.btn {
+	/*not part of the lesson, just wanted to fuck around */
+	transition: box-shadow 0.5s;
 }
 
 .btn:hover,
 .btn:active {
 	background-color: #099268;
+	box-shadow: 0 0 100px 100px rgba(30, 5, 100, 1.2);
 }
 
 .btn--big {
@@ -78,6 +86,10 @@ h2 {
 .btn--small {
 	font-size: 14px;
 	padding: 8px 12px;
+}
+
+img {
+	border-radius: 12px;
 }
 
 /* ------------------------ */
@@ -102,6 +114,9 @@ h1 {
 	/* / 44 / 52 / 62 / */
 	line-height: 1.1;
 	letter-spacing: -2px;
+	/*
+	text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	*/
 }
 
 .header-text {
@@ -138,6 +153,7 @@ img {
 	background-color: #087f5b;
 	color: white;
 	padding: 24px;
+	border-radius: 12px;
 }
 
 .testimonial-box {
@@ -159,6 +175,23 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+	/*First number is moving the shadow to the right (pos) or left(neg)
+		2nd is moving the shadow down (pos) or up (neg)
+		3rd is how much the shadow grows outward from the item
+		4th is how deep out the blackness grows from within the object
+		5th is the color, use rgba to set the opacity.  You generally want less than .1 - .3
+		*/
+
+	box-shadow: -0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+}
+.chair img {
+	/*This is how you style specific corners.   */
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
 .chair-box {
 	padding: 24px;
 }
@@ -185,6 +218,9 @@ h3 {
 }
 
 .chair-icon {
+	stroke: var(--MainColor);
+	width: 24px;
+	height: 24px;
 }
 
 .chair-price {
