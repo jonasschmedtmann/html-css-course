@@ -1,0 +1,236 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* Main Color: #087f5b
+	Grey Color: #343a40
+
+*/
+:root {
+	--MainColor: #087f5b;
+	--SecondaryColor: #343a40;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+	/* font-family: sans-serif; */
+
+	font-family: 'Poppins' sans-serif;
+	color: var(--SecondaryColor);
+	border-bottom: 8px solid var(--MainColor);
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header,
+section {
+	margin-bottom: 48px;
+}
+
+h2 {
+	margin-bottom: 48px;
+	font-size: 30px;
+	letter-spacing: -1px;
+}
+
+.grid-3-cols {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+	background-color: #087f5b;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	display: inline-block;
+	font-weight: 500;
+
+	border-radius: 100px;
+}
+
+.btn {
+	/*not part of the lesson, just wanted to fuck around */
+	transition: box-shadow 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #099268;
+	box-shadow: 0 0 100px 100px rgba(30, 5, 100, 1.2);
+}
+
+.btn--big {
+	padding: 16px 32px;
+	font-size: 18px;
+}
+
+.btn--small {
+	font-size: 14px;
+	padding: 8px 12px;
+}
+
+img {
+	border-radius: 12px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+	margin-top: 48px;
+}
+
+.header-text-box {
+	align-self: center;
+}
+
+h1 {
+	margin-bottom: 24px;
+	font-size: 44px;
+	/* / 44 / 52 / 62 / */
+	line-height: 1.1;
+	letter-spacing: -2px;
+	/*
+	text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+	*/
+}
+
+.header-text {
+	margin-bottom: 24px;
+	/* 16 / 18 / 20  */
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+img {
+	width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+	stroke: var(--MainColor);
+	width: 32px;
+	height: 32px;
+	margin-bottom: 16px;
+}
+
+.features-title {
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+
+.features-text {
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+	background-color: #087f5b;
+	color: white;
+	padding: 24px;
+	border-radius: 12px;
+}
+
+.testimonial-box {
+	grid-column: 2 / -1;
+	align-self: center;
+}
+
+.testimonial-box h2 {
+	margin-bottom: 24px;
+	/* 20 / 24 / 30  */
+	font-size: 24px;
+}
+
+.testimonial-text {
+	font-style: italic;
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/* CHAIRS */
+.chair {
+	/*First number is moving the shadow to the right (pos) or left(neg)
+		2nd is moving the shadow down (pos) or up (neg)
+		3rd is how much the shadow grows outward from the item
+		4th is how deep out the blackness grows from within the object
+		5th is the color, use rgba to set the opacity.  You generally want less than .1 - .3
+		*/
+
+	box-shadow: -0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+}
+.chair img {
+	/*This is how you style specific corners.   */
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.chair-box {
+	padding: 24px;
+}
+
+h3 {
+	margin-bottom: 24px;
+	font-size: 20px;
+}
+
+.chair-details {
+	list-style: none;
+	margin-bottom: 24px;
+}
+
+.chair-details li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.chair-details li:last-child {
+	margin-bottom: 0;
+}
+
+.chair-icon {
+	stroke: var(--MainColor);
+	width: 24px;
+	height: 24px;
+}
+
+.chair-price {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+footer {
+	margin-bottom: 48px;
+	font-size: 14px;
+	color: #868e96;
+}

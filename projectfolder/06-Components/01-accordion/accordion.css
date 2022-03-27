@@ -1,0 +1,114 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+(rems) (divide by 10)
+.2/.4/.8./1.2/1.6 ....
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+(rems) divide by 10
+1 / 1.2 / 1.4/ 1.6 ...
+*/
+
+/* Main Color: #087f5b
+	Grey Color: #343a40
+
+*/
+:root {
+	--MainColor: #087f5b;
+	--SecondaryColor: #343a40;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+	/* font-family: sans-serif; */
+
+	font-family: 'Poppins' sans-serif;
+	color: var(--SecondaryColor);
+
+	font-size: 10;
+	line-height: 1;
+}
+
+.accordion {
+	width: 700px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+.active,
+.item:hover {
+	background-color: #e9ecef;
+}
+
+.item {
+	box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.1);
+	padding: 2.4rem;
+
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	column-gap: 2.4rem;
+	row-gap: 3.2rem;
+	align-items: center;
+}
+.number,
+.text {
+	font-size: 2.4rem;
+	font-weight: 500;
+	/* color: var(--MainColor); */
+}
+
+.number {
+	color: #ced4da;
+}
+.icon {
+	width: 2.4rem;
+	height: 2.4 rem;
+	stroke: var(--MainColor);
+}
+
+.hiddenBox {
+	grid-column: 2;
+	display: none;
+}
+.hiddenBox ul {
+	color: #868e96;
+	margin-left: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.hiddenBox p {
+	line-height: 1.6;
+	margin-bottom: 2.4rem;
+}
+
+/* .hiddenBox li {
+	margin-bottom: 1.2rem;
+} */
+
+/* Open State */
+
+.open {
+	border-top: 0.4rem solid var(--MainColor);
+}
+
+.open .hiddenBox {
+	display: block;
+}
+
+.open .number,
+.open .text {
+	color: var(--MainColor);
+}
