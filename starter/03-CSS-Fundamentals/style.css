@@ -1,12 +1,52 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  /* border-top: 10px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+
+body {
   font-family: sans-serif;
   color: #444;
+  border-top: 15px solid rgb(99, 126, 184);
 }
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid rgb(99, 126, 184);
+  border-bottom: 5px solid rgb(99, 126, 184);
+  padding: 50px 0;
+  width: 500px;
+}
+
+nav {
+  font-size: 22px;
+}
+
+/* smaller sections */
 
 h1,
 h2,
@@ -23,10 +63,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -36,15 +79,28 @@ h4 {
 
 p {
   font-size: 22px;
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 20px;
+  margin: 10px;
+  /* display: inline; */
 }
 
-/* footer p {
-  font-size: 16px;
-} */
+li:last-child {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li:last-child {
+  margin-left: 10px;
+}
 
 #author {
   font-style: italic;
@@ -63,26 +119,17 @@ li {
   list-style: none;
 }
 
-.main-header {
-  background-color: #dfdfdf;
-}
-
-aside {
-  background-color: #dfdfdf;
-  border-top: 5px solid rgb(99, 126, 184);
-  border-bottom: 5px solid rgb(99, 126, 184);
-}
-
 li:first-child {
   font-weight: bold;
 }
 
-li:nth-child(odd) {
-  /* color: red; */
-}
+/* li:nth-child(odd) {
+  color: red;
+} */
 
 a:link {
   color: rgb(87, 87, 189);
+  text-decoration: none;
 }
 
 a:visited {
@@ -99,4 +146,23 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* margin: 20px;
+  background-color: aqua;
+  padding: 20px;
+  display: block; */
+
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
