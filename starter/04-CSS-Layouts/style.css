@@ -26,6 +26,7 @@ article {
 
 .main-header {
   background-color: #f7f7f7;
+  background-color: red;
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
@@ -209,4 +210,23 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
 }
