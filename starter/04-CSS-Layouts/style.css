@@ -230,3 +230,15 @@ h1 {
 nav {
   float: right;
 }
+
+/* method 1*/
+.clear {
+  clear: both;
+}
+
+/* method 2*/
+.clear-fix::after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
