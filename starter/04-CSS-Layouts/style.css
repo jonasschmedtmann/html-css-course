@@ -2,6 +2,7 @@
   /* border-top: 10px solid red; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*  */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -26,7 +27,6 @@ article {
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: red;
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
@@ -41,7 +41,6 @@ aside {
   border-top: 5px solid rgb(99, 126, 184);
   border-bottom: 5px solid rgb(99, 126, 184);
   padding: 50px 0;
-  width: 500px;
 }
 
 nav {
@@ -76,8 +75,10 @@ h3 {
 }
 
 h4 {
-  text-align: center;
   font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -120,6 +121,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 li:first-child {
@@ -240,5 +242,20 @@ nav {
 .clear-fix::after {
   content: "";
   display: inline-block;
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  padding: 40px;
+}
+
+footer {
   clear: both;
 }
