@@ -340,11 +340,11 @@ aside {
   grid-column: 1 / span 2;
 }
 
-article {
+/* article {
 }
 
 aside {
-}
+} */
 
 footer {
   grid-column: 1 / span 2;
