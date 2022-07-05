@@ -27,7 +27,6 @@
       }
       .el--7 {
         background-color: yellow;
-        height: 150px;
       }
       .el--8 {
         background-color: crimson;
@@ -51,9 +50,12 @@
         /* Gap */
         column-gap: 20px;
         row-gap: 40px;
+
+        /* Temp */
+        display: none;
       }
 
-      .el--1 {
+      /* .el--1 {
         grid-row: 2;
         grid-column: 4;
       }
@@ -66,21 +68,41 @@
       .el--8 {
         grid-column: 2 / span 2;
         grid-row: 2;
-      }
+      } */
 
       .container--2 {
-        display: none;
+        /* display: none; */
 
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligning tracks inside container
+        Distribute empty space*/
+
+        justify-content: center;
+        align-content: center;
+
+        /* Aligning items inside cells:moving items around inside cells */
+
+        justify-items: center;
+        align-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
