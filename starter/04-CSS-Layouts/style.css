@@ -308,7 +308,9 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* FLEXBOX */
+
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -322,4 +324,4 @@ article {
 
 aside {
   flex: 0 0 300px;
-}
+} */
