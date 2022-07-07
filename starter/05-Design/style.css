@@ -149,6 +149,15 @@ img {
 }
 
 /* CHAIRS */
+
+.chair {
+  /* SYNTAX for box-shadown : 
+
+  offset-x | offset-y | blur-radius | spread-radius | color  */
+
+  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
 .chair-box {
   padding: 24px;
 }
