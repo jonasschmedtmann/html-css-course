@@ -104,6 +104,10 @@
       .open .text {
         color: #087f5b;
       }
+
+      .accordion .item {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -143,7 +147,7 @@
         </div>
       </div>
 
-      <div class="item open">
+      <div class="item">
         <p class="number">02</p>
         <p class="text">How long do i have to return my chair?</p>
         <svg
@@ -213,5 +217,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const accordion = document.getElementsByClassName("item");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("open");
+        });
+      }
+    </script>
   </body>
 </html>
