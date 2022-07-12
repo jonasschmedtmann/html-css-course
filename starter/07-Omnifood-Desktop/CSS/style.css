@@ -68,6 +68,9 @@ body {
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 9px;
+
+  /* put transition: on original "state" */
+  transition: background-color 0.3s;
 }
 
 .btn--full:link,
@@ -90,6 +93,9 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
+
+  /* box-shadow Trick */
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 .hero-img {
