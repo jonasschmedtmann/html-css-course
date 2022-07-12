@@ -37,3 +37,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #555;
+  line-height: 1;
+}
