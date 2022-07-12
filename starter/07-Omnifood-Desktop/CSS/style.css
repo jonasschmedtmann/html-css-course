@@ -1,0 +1,39 @@
+/*
+---  TYPOGRAPHY SYSTEM 
+ 
+ 
+      ---FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ 
+ 
+      ---FONT WEIGHTS ()
+      DEFAULT - 400
+      
+      ---COLORS
+      PRIMARY - #e67e22
+      Tints - 
+      Shades - 
+      Accents - 
+      Greys - #555  
+      
+      --- SHADOWS -
+      
+      --- BORDER-RADIUS - 
+      
+      --- WHITE-SPACE - 
+      
+      --- SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      
+*/
+html {
+  /* 10 / 16 = 0.625 == 62.5% */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
