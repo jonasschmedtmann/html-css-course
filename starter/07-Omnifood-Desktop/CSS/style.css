@@ -12,7 +12,7 @@
       ---COLORS
       PRIMARY - #e67e22
       Tints - #fdf2e9
-      Shades - 
+      Shades - #cf711f
       Accents - 
       Greys - 
       #555  
@@ -42,7 +42,7 @@ html {
 
 body {
   font-weight: 400;
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #555;
   line-height: 1;
 }
@@ -68,6 +68,7 @@ body {
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   border-radius: 9px;
+  font-weight: 600;
 
   /* put transition: on original "state" */
   transition: background-color 0.3s;
@@ -115,4 +116,42 @@ body {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+}
+
+/* helper-class */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  /* width: 6.8rem; */
+  border-radius: 50px;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600px;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
