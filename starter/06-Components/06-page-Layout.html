@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+
+    <style>
+      /*
+         SPACING SYSTEM (px)
+         2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+         FONT SIZE SYSTEM (px)
+         10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+
+        font-size: 24px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+
+      nav {
+        background-color: #343a40;
+        color: #fff;
+        grid-row: 1 / -1;
+      }
+
+      Menu {
+        background-color: #7048e8;
+        grid-column: 2 / -1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+
+      section {
+        background-color: #e9ecef;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        overflow: scroll;
+      }
+
+      .email {
+        background-color: #adb5bd;
+        height: 96px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+      }
+
+      main {
+      }
+
+      aside {
+        background-color: #e9ecef;
+      }
+
+      button {
+        display: inline-block;
+        font-size: 16px;
+        background-color: #5f3dc4;
+        border: none;
+        cursor: pointer;
+        padding: 8px 12px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional info</aside>
+  </body>
+</html>
