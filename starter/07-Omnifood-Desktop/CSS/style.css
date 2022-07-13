@@ -1,116 +1,3 @@
-/*
----  TYPOGRAPHY SYSTEM 
- 
- 
----FONT SIZE SYSTEM (px)
-      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
- 
- 
----FONT WEIGHTS 
-      DEFAULT - 400
-      Medium : 500
-      Semi-Medium : 600
-      Bold: 700
-
----line-height
-      DEFAULT - 1
-      small - 1.05
-      paragraph default - 1.6
-      
----COLORS
-      PRIMARY - #e67e22
-      Tints - #fdf2e9
-      Shades - #cf711f
-      Accents - 
-      Greys - 
-      #555  
-      #333
-      
---- SHADOWS -
-      
---- BORDER-RADIUS - 
-      DEFAULT - 9px
-      
---- WHITE-SPACE - 
-      
---- SPACING SYSTEM (px)
-      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-      
-*/
-html {
-  /* 10 / 16 = 0.625 == 62.5% */
-  font-size: 62.5%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  color: #555;
-  line-height: 1;
-}
-
-/* ****************************** */
-/* GENERAL REUSABLE COMPONENTS */
-/* ****************************** */
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  color: #333;
-  line-height: 1.05;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  text-decoration: none;
-  border-radius: 9px;
-  font-weight: 600;
-
-  /* put transition: on original "state" */
-  transition: background-color 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-
-  /* box-shadow Trick */
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
 /* ****************************** */
 /* HEADER  */
 /* ****************************** */
@@ -232,4 +119,61 @@ header {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* ****************************** */
+/* HOW IT WORKS SECTION */
+/* ****************************** */
+
+.hero-how {
+  padding: 9.6rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
 }
