@@ -24,11 +24,18 @@
       
 ---COLORS
       PRIMARY - #e67e22
+      
       Tints - 
       #fdf2e9
       #fae5d3
-      Shades - #cf711f
+      #eb984e
+      
+      Shades - 
+      #cf711f
+      #45260a
+
       Accents - 
+      
       Greys - 
       #6f6f6f - (lightest grgridmneey allowed on #fdf2e9)
       #555  
@@ -36,6 +43,8 @@
       #888
       
 --- SHADOWS -
+      0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
       
 --- BORDER-RADIUS - 
       DEFAULT - 9px
@@ -144,6 +153,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -153,8 +163,25 @@ body {
   border-radius: 9px;
   font-weight: 600;
 
+  /* Only for .btn element */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
   /* put transition: on original "state" */
   transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #555;
 }
 
 .btn--full:link,
@@ -216,6 +243,11 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER CLASSES */
