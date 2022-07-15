@@ -11,6 +11,7 @@
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -25,7 +26,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -54,6 +55,26 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /**************************/
@@ -363,26 +384,26 @@
   padding: 9.6rem 0;
 }
 
-.princing-plan {
+.pricing-plan {
   border-radius: 11px;
 
   width: 75%;
 }
 
-.princing-plan--starter {
+.pricing-plan--starter {
   justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
 }
 
-.princing-plan--complete {
+.pricing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 
-.princing-plan--complete::after {
+.pricing-plan--complete::after {
   content: "Best value";
   position: absolute;
   top: 6%;
