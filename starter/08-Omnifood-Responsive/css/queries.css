@@ -1,7 +1,5 @@
-/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
-
 /**************************/
-/* BELOW 1344px (Smaller desktops) */
+/*  below 1344px (smaller desktops) */
 /**************************/
 
 @media (max-width: 84em) {
@@ -19,12 +17,11 @@
 }
 
 /**************************/
-/* BELOW 1200px (Landscape Tablets) */
+/*  below 1200px (Landscape tablets) */
 /**************************/
 
 @media (max-width: 75em) {
   html {
-    /* 9px / 16px  */
     font-size: 56.25%;
   }
 
@@ -45,12 +42,12 @@
     padding: 0 3.2rem;
   }
 
-  .main-nav-list {
-    gap: 3.2rem;
-  }
-
   .hero {
     gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
   }
 
   .testimonials-container {
@@ -59,12 +56,12 @@
 }
 
 /**************************/
-/* BELOW 944px (Tablets) */
+/*  below 944px (Tablets) */
 /**************************/
 
 @media (max-width: 59em) {
   html {
-    /* 8px / 16px = 0.5 = 50% */
+    /* 8px / 16px = 0.5 = 50%  */
     font-size: 50%;
   }
 
@@ -109,7 +106,6 @@
   }
 
   .cta {
-    /* 3/5 = 60% + 2/5 = 40% */
     grid-template-columns: 3fr 2fr;
   }
 
@@ -117,41 +113,41 @@
     grid-template-columns: 1fr;
   }
 
-  .btn--form {
+  .btn-form {
     margin-top: 1.2rem;
   }
 
-  /* MOBILE NAVIGATION */
+  /* NAVIGATION */
   .btn-mobile-nav {
     display: block;
-    z-index: 1000;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
+    background-color: rgb(255, 255, 255, 0.97);
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100vh;
     transform: translateX(100%);
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     transition: all 0.5s ease-in;
 
-    /* Hide navigation */
-    /* Allows NO transitions at all */
+    /* hide nav */
+    /* Allows no transitions at all */
     /* display: none; */
 
-    /* 1) Hide it visually */
+    /* Hide it visually */
     opacity: 0;
 
-    /* 2) Make it unaccessible to mouse and keyboard */
+    /* Make it unaccessible to mouse and keyboard */
     pointer-events: none;
 
-    /* 3) Hide it from screen readers */
+    /* Hide it from screen readers */
     visibility: hidden;
   }
 
@@ -159,7 +155,7 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    transform: translateX(0);
+    transform: translate(0);
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -182,7 +178,7 @@
 }
 
 /**************************/
-/* BELOW 704px (Smaller tablets) */
+/*  below 704px (Smaller Tablets) */
 /**************************/
 
 @media (max-width: 44em) {
@@ -208,8 +204,8 @@
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .logo-col,
-  .address-col {
+  .address-col,
+  .logo-col {
     grid-column: span 3;
   }
 
@@ -221,7 +217,7 @@
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/*  below 544px (Phones) */
 /**************************/
 
 @media (max-width: 34em) {
@@ -235,18 +231,18 @@
     grid-template-columns: 1fr;
   }
 
-  .btn,
-  .btn:link,
-  .btn:visited {
-    padding: 2.4rem 1.6rem;
-  }
-
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
   }
 
   .hero {
     padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
   }
 
   .hero-img {
@@ -291,11 +287,3 @@
     grid-row: 1;
   }
 }
-
-/* 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
