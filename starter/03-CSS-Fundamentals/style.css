@@ -89,6 +89,26 @@ li:last-child {
   font-style: italic;
 }
 
-li:nth-child(2) {
+/* li:nth-child(2) {
   color: red;
+} */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
 }
