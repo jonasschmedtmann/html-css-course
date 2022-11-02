@@ -1,3 +1,8 @@
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
 h1,
 h2,
 h3,
@@ -30,11 +35,6 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-}
-
-p {
-  font-size: 22px;
-  line-height: 1.5;
 }
 
 li {
@@ -111,4 +111,20 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+/* #copyright {
+  color: orangered;
+} */
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
 }
