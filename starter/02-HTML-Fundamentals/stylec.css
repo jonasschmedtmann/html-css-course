@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  border: 5px solid black;
+}
+
+h2 {
+  text-align: center;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+b {
+  font-size: 24px;
+}
+
+button {
+  font-size: 26px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  font-style: italic;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.fshi {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.details {
+  list-style: square;
+}
