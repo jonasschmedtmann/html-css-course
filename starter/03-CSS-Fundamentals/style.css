@@ -78,6 +78,11 @@ footer p {
   font-size: 18px;
 }
 
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
