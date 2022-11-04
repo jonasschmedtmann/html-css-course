@@ -5,6 +5,7 @@
 
 body {
   border-top: #1098ad solid 10px;
+  position: relative;
 }
 
 article {
@@ -69,10 +70,22 @@ footer p {
   font-size: 16px;
 }
 
+nav a:link {
+  margin: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
 /* article header p {
   font-style: italic;
 } */
 
+/* .test {
+  display: inline-block;
+} */
 #author {
   font-style: italic;
   font-size: 18px;
@@ -160,3 +173,13 @@ a:active {
 /* #copyright {
   color: orangered;
 } */
+.like {
+  font-size: 33px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  bottom: 50px;
+  right: 50px;
+}
