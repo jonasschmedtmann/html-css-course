@@ -91,10 +91,16 @@ footer p {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
   margin-bottom: 40px;
+}
+
+.post-img {
+  height: auto;
+  width: 100%;
 }
 
 aside {
@@ -102,6 +108,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 /* body {
