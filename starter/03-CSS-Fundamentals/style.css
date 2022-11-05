@@ -71,6 +71,7 @@ footer p {
 }
 
 nav a:link {
+  font-size: 18px;
   margin: 10px;
   margin-top: 10px;
   display: inline-block;
@@ -182,4 +183,24 @@ a:active {
   left: 0; */
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  position: relative;
+}
+h2::after {
+  position: absolute;
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+  right: -25px;
+  top: -5px;
+  color: #444;
 }
