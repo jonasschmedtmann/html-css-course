@@ -71,7 +71,7 @@ li {
 }
 
 ul {
-  margin-left: 18px;
+  margin-left: 20px;
 }
 
 .fshi {
@@ -95,4 +95,53 @@ ul {
   /* height: auto; */
   margin: 50px auto;
   padding: 0;
+  position: relative;
+}
+
+.container::before {
+  position: absolute;
+  content: "SALE";
+  background-color: red;
+  color: white;
+  padding: 5px;
+  top: -20px;
+  left: -30px;
+  width: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.color-bars {
+  margin-top: 30px;
+  display: block;
+}
+
+.color-bar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.color-1 {
+  background-color: black;
+}
+
+.color-2 {
+  background-color: blue;
+}
+
+.color-3 {
+  background-color: red;
+}
+
+.color-4 {
+  background-color: yellow;
+}
+
+.color-5 {
+  background-color: green;
+}
+
+.color-6 {
+  background-color: cyan;
 }
