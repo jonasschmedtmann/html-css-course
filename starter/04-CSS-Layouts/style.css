@@ -27,7 +27,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  /* height: 80px; */
+  height: auto;
 }
 
 nav {
@@ -265,3 +265,28 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* float */
+.author-img {
+  float: left;
+}
+
+#author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
