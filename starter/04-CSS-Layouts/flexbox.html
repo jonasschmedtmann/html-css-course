@@ -8,6 +8,8 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
+        order: 2;
       }
       .el--2 {
         background-color: orangered;
@@ -18,12 +20,14 @@
       }
       .el--4 {
         background-color: goldenrod;
+        align-self: stretch;
       }
       .el--5 {
         background-color: palevioletred;
       }
       .el--6 {
         background-color: steelblue;
+        order: -1;
       }
       .el--7 {
         background-color: yellow;
@@ -32,6 +36,9 @@
         background-color: crimson;
       }
 
+      .el {
+        /* margin-right: 10px; */
+      }
       .container {
         /* STARTER */
         font-family: sans-serif;
@@ -40,6 +47,10 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
       }
     </style>
   </head>
