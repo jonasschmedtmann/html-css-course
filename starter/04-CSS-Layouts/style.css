@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -299,8 +300,13 @@ article {
 aside {
   width: 300px;
   float: right;
+  padding: 50px 40px;
 }
 
 footer {
   clear: both;
+}
+
+.related {
+  margin: 0;
 }

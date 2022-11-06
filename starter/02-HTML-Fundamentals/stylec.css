@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -111,7 +112,7 @@ ul {
   letter-spacing: 2px;
 }
 .color-bars {
-  margin-top: 30px;
+  margin-top: 20px;
   display: block;
 }
 
@@ -145,3 +146,47 @@ ul {
 .color-6 {
   background-color: cyan;
 }
+
+.part0 {
+  float: left;
+  width: 240px;
+}
+.part1 {
+  float: left;
+  width: 240px;
+  margin-left: 50px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.part2 {
+  float: right;
+  width: 240px;
+  margin-top: 0;
+}
+
+.money {
+  float: left;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.fshi {
+  float: right;
+  margin-top: 18px;
+  text-align: center;
+  clear: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.product-details {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+} */
