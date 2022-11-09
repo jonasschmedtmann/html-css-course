@@ -313,6 +313,13 @@ footer {
 */
 
 /* flex */
+.article {
+  flex: 0 0 825px;
+  margin-bottom: 0;
+}
+.aside {
+  flex: 0 0 300px;
+}
 .main-header {
   display: flex;
   align-items: center;
@@ -349,4 +356,12 @@ footer {
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  gap: 75px;
+  margin-bottom: 60px;
 }

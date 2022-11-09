@@ -23,9 +23,9 @@ h2 {
   text-align: center;
 }
 
-h3 {
+/* h3 {
   margin-top: 30px;
-}
+} */
 b {
   font-size: 24px;
 }
@@ -70,8 +70,11 @@ button:hover {
 li {
   margin-bottom: 10px;
 }
+li:last-child {
+  margin-bottom: 0;
+}
 
-ul {
+li ul {
   margin-left: 20px;
 }
 
@@ -146,7 +149,7 @@ ul {
 .color-6 {
   background-color: cyan;
 }
-
+/* 
 .part0 {
   float: left;
   width: 240px;
@@ -180,9 +183,9 @@ ul {
 .clear {
   clear: both;
 }
-
+*/
 .product-details {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 10px;
 }
 
@@ -190,3 +193,30 @@ ul {
   content: "";
   clear: both;
 } */
+.little-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* gap: 25px; */
+}
+.row {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* gap: 25px; */
+  margin-bottom: 0;
+}
+
+.part1 {
+  flex: 1;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.part2 {
+  flex: 1;
+  /* margin-top: 20px; */
+  /* margin-right: 40px; */
+}
