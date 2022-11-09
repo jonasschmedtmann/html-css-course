@@ -91,6 +91,7 @@ li ul {
 
 .add-to-cart {
   width: 100%;
+  grid-column: 1 / -1;
 }
 
 .container {
@@ -210,13 +211,26 @@ li ul {
 
 .part1 {
   flex: 1;
-  margin-left: 40px;
+  /* margin-left: 40px;
   margin-top: 20px;
-  margin-right: 40px;
+  margin-right: 40px; */
+  margin-top: 20px;
 }
 
 .part2 {
   flex: 1;
   /* margin-top: 20px; */
   /* margin-right: 40px; */
+  margin-top: 20px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  align-items: start;
+}
+
+.title {
+  grid-column: 1 / -1;
 }
