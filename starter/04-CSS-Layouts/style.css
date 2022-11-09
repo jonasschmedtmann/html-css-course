@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   height: auto;
 }
 
@@ -52,7 +52,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  width: 300px;
 }
 
 /* SMALLER ELEMENTS */
@@ -358,10 +358,32 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* .row {
   display: flex;
   align-items: flex-start;
   /* justify-content: space-between; */
-  gap: 75px;
-  margin-bottom: 60px;
+
+/* css grid layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1 / -1;
 }
