@@ -95,6 +95,7 @@ h1 {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+  text-shadow: 0 4px 3px rgba(177, 172, 172, 0.35);
 }
 
 .header-text {
@@ -150,6 +151,9 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  box-shadow: 0 20px 20px 10px rgba(177, 172, 172, 0.35);
+}
 .chair-box {
   padding: 24px;
 }
