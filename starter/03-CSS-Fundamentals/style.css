@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: #1098ad solid 10px;
+  position: relative;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444444;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+nav a:link {
+  font-size: 18px;
+  margin: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+/* article header p {
+  font-style: italic;
+} */
+
+/* .test {
+  display: inline-block;
+} */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-img {
+  height: auto;
+  width: 100%;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* body {
+  background-color: blue;
+} */
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* li:nth-child(2) {
+  color: red;
+} */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* #copyright {
+  color: orangered;
+} */
+.like {
+  font-size: 33px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  position: relative;
+}
+h2::after {
+  position: absolute;
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+  right: -25px;
+  top: -5px;
+  color: #444;
+}

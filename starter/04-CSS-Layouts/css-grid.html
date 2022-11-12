@@ -11,10 +11,13 @@
       }
       .el--2 {
         background-color: orangered;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
       }
       .el--3 {
         background-color: green;
         height: 150px;
+        align-self: end;
       }
       .el--4 {
         background-color: goldenrod;
@@ -30,29 +33,51 @@
       }
       .el--8 {
         background-color: crimson;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
       }
 
       .container--1 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 20px;
         margin: 40px;
 
         /* CSS GRID */
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
+        /* display: none; */
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
+        gap: 50px;
+
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        justify-content: center;
+
+        align-content: center;
+
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>

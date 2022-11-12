@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -26,8 +27,8 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
-  /* height: 80px; */
+  /* margin-bottom: 60px; */
+  height: auto;
 }
 
 nav {
@@ -51,7 +52,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  width: 300px;
 }
 
 /* SMALLER ELEMENTS */
@@ -197,7 +198,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  margin-top: 0;
   display: inline-block;
 }
 
@@ -265,3 +266,124 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* float 
+.author-img {
+  float: left;
+}
+
+#author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  float: left;
+  width: 825px;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  padding: 50px 40px;
+}
+
+footer {
+  clear: both;
+}
+
+.related {
+  margin: 0;
+}
+*/
+
+/* flex */
+.article {
+  flex: 0 0 825px;
+  margin-bottom: 0;
+}
+.aside {
+  flex: 0 0 300px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#author {
+  margin: 0 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* .row {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+
+/* css grid layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1 / -1;
+}
