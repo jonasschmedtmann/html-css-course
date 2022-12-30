@@ -27,3 +27,23 @@
 - Types of Boxes
 - Absolute Positioning
 - Pseudo-Elements
+
+# Layouts: Floats, Flexbox, CSS Grid
+
+- The 3 ways of Building Layouts
+- Using Floats
+- Clearing Floats
+- Building a simple float Layout
+- box-sizing: border-box
+- Introduction to Flexbox
+- Flexbox Overview
+- Spacing and Aligning Flex items
+- the flex Property
+- Adding Flexbox to our Project
+- Building a simple Flexbox Layout
+- Introduction to CSS Grid
+- CSS Grid Overview
+- Sizing Grid Columns and Rows
+- Placing and Spanning Grid items
+- Aligning Grid items and Tracks
+- Building a simple CSS Grid Layout

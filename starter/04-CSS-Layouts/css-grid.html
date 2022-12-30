@@ -40,6 +40,24 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px 200px;
+        gap: 20px;
+        row-gap: 60px;
+
+        display: none;
+      }
+
+      .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+
+      .el--2 {
+        grid-row: 2/3;
+        grid-column: 1/-1;
       }
 
       .container--2 {
@@ -53,6 +71,15 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+
+        grid-template-columns: 125px 250px 125px;
+        grid-template-rows: 250px 100px;
+        justify-content: center;
+        align-content: center;
+
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>

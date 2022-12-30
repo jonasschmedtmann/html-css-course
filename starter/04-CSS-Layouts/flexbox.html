@@ -39,7 +39,25 @@
         font-size: 40px;
         margin: 40px;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
         /* FLEXBOX */
+      }
+
+      .el {
+        /* 
+         DEFAULTS:
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: auto;
+         */
+        align-self: flex-start;
+        flex-grow: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>

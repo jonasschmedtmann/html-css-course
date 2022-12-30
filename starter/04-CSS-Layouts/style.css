@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -82,6 +83,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -134,6 +136,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -197,7 +200,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -265,3 +267,126 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+
+/* .author-img { */
+/*   float: left; */
+/*   margin-bottom: 20px; */
+/* } */
+
+/* .author { */
+/*   /1* padding-left: 80px; *1/ */
+/*   float: left; */
+/*   margin-top: 10px; */
+/*   margin-left: 20px; */
+/* } */
+
+/* h1 { */
+/*   float: left; */
+/* } */
+
+/* nav { */
+/*   float: right; */
+/* } */
+
+/* .clear { */
+/*   clear: both; */
+/* } */
+
+/* .clearfix::after { */
+/*   clear: both; */
+/*   content: ""; */
+/*   display: block; */
+/* } */
+
+/* article { */
+/*   /1* background-color: green; *1/ */
+/*   width: 825px; */
+/*   float: left; */
+/* } */
+
+/* aside { */
+/*   /1* background-color: red; *1/ */
+/*   width: 300px; */
+/*   float: right; */
+/*   padding: 40px; */
+/* } */
+
+/* footer { */
+/*   /1* background-color: yellow; *1/ */
+/*   clear: both; */
+/* } */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-bottom: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
+
+/* CSS GRID */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
+}
