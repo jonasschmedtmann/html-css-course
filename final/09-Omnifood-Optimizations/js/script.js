@@ -25,6 +25,14 @@ const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+
+  ///////////////////////////////////////////////////////////
+  //It will prevent the vertical scrolling while nav-menu is on.
+  if (headerEl.classList.contains("nav-open")) {
+    document.documentElement.style.overflowY = "hidden";
+  } else {
+    document.documentElement.style.overflowY = "visible";
+  }
 });
 
 ///////////////////////////////////////////////////////////
