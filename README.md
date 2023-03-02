@@ -10,7 +10,9 @@ Use starter code to start each section, and **final code to compare it with your
 
 ### Q1: How do I download the files?
 
-**A:** If you're new to GitHub and just want to download the entire code, hit the green button saying "Code", and then choose the "Download ZIP" option. If you can't see the button (on mobile), use [this link](https://github.com/jonasschmedtmann/html-css-course/archive/master.zip) instead.
+**A:** New to Github? ,get the entire code by clicking on the green Code button, click the "Download ZIP" option. Now you have a copy of the project.
+Thus, you can play around with it locally on your computer. 
+For mobile screen devices, green Code button might not be available, use [this link](https://github.com/jonasschmedtmann/html-css-course/archive/master.zip) instead.
 
 ### Q2: I'm stuck! Where do I get help?
 
