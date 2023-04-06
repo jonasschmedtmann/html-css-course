@@ -32,3 +32,19 @@ To impress friends
 To have fun 😃
 
 Hopefully you learned something new here. See you next time!
+
+Related posts
+
+How to Learn Web Development
+
+By Jonas Schmedtmann
+
+The Unknown Powers of CSS
+
+By Jim Dillon
+
+Why JavaScript is Awesome
+
+By Matilda
+
+Copyright © 2027 by The Code Magazine.
