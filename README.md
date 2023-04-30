@@ -49,7 +49,7 @@ Use starter code to start each section, and **final code to compare it with your
 **A:** First, you can subscribe to my email list [at my website](http://codingheroes.io/resources). Plus, I make important announcements on twitter [@jonasschmedtman](https://twitter.com/jonasschmedtman), so you should definitely follow me there 🔥
 
 ### Q11: How do I get my certificate of completion?
-
+html
 **A:** A certificate of completion is provided by Udemy after you complete 100% of the course. After completing the course, just click on the "Your progress" indicator in the top right-hand corner of the course page. If you want to change your name on the certificate, please [contact the Udemy support team](https://support.udemy.com/hc/en-us).
 
 ### Q12: Can you add subtitles in my language?
