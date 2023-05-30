@@ -36,11 +36,34 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* gap: 30px; */
+        column-gap: 20px;
+        row-gap: 40px;
+
+        display: none;
       }
+
+      .el--8 {
+        grid-column: 2 / 3;
+        grid-row: 1/2;
+      }
+
+      .el--2 {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+
+      /* .el--6 {
+        grid-row: 3 / 6;
+      } */
 
       .container--2 {
         /* STARTER */
@@ -53,6 +76,17 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* aligning */
+
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>

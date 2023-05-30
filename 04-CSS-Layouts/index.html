@@ -18,143 +18,156 @@
     -->
 
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magazine</h1>
 
         <nav>
           <!-- <strong>This is the navigation</strong> -->
           <a href="blog.html">Blog</a>
           <a href="#">Challenges</a>
-          <a href="#">Flexbox</a>
-          <a href="#">CSS Grid</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">CSS Grid</a>
         </nav>
+        <!-- <div class="clear"></div> -->
       </header>
 
-      <article>
-        <header class="post-header">
-          <h2>The Basic Language of the Web: HTML</h2>
+      <!-- Flexbox -->
+      <!-- <div class="row"> -->
+        <article>
+          <header class="post-header">
+            <h2>The Basic Language of the Web: HTML</h2>
+            <div class="author-box">
+              <img
+                src="img/laura-jones.jpg"
+                alt="Headshot of Laura Jones"
+                height="50"
+                width="50"
+                class="author-img"
+              />
 
-          <img
-            src="img/laura-jones.jpg"
-            alt="Headshot of Laura Jones"
-            height="50"
-            width="50"
-          />
+              <p id="author">
+                Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+              </p>
+            </div>
 
-          <p id="author">
-            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+            <img
+              src="img/post-img.jpg"
+              alt="HTML code on a screen"
+              width="500"
+              height="200"
+              class="post-img"
+            />
+            <button>❤️ Like</button>
+          </header>
+
+          <p>
+            All modern websites and web applications are built using three
+            <em>fundamental</em>
+            technologies: HTML, CSS and JavaScript. These are the languages of
+            the web.
           </p>
 
-          <img
-            src="img/post-img.jpg"
-            alt="HTML code on a screen"
-            width="500"
-            height="200"
-            class="post-img"
-          />
-          <button>❤️ Like</button>
-        </header>
+          <p>
+            In this post, let's focus on HTML. We will learn what HTML is all
+            about, and why you too should learn it.
+          </p>
 
-        <p>
-          All modern websites and web applications are built using three
-          <em>fundamental</em>
-          technologies: HTML, CSS and JavaScript. These are the languages of the
-          web.
-        </p>
+          <h3>What is HTML?</h3>
+          <p>
+            HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+            <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+            language that web developers use to structure and describe the
+            content of a webpage (not a programming language).
+          </p>
+          <p>
+            HTML consists of elements that describe different types of content:
+            paragraphs, links, headings, images, video, etc. Web browsers
+            understand HTML and render HTML code as websites.
+          </p>
+          <p>In HTML, each element is made up of 3 parts:</p>
 
-        <p>
-          In this post, let's focus on HTML. We will learn what HTML is all
-          about, and why you too should learn it.
-        </p>
+          <ol>
+            <li class="first-li">The opening tag</li>
+            <li>The closing tag</li>
+            <li>The actual element</li>
+          </ol>
 
-        <h3>What is HTML?</h3>
-        <p>
-          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
-          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
-          language that web developers use to structure and describe the content
-          of a webpage (not a programming language).
-        </p>
-        <p>
-          HTML consists of elements that describe different types of content:
-          paragraphs, links, headings, images, video, etc. Web browsers
-          understand HTML and render HTML code as websites.
-        </p>
-        <p>In HTML, each element is made up of 3 parts:</p>
+          <p>
+            You can learn more at
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              >MDN Web Docs</a
+            >.
+          </p>
 
-        <ol>
-          <li class="first-li">The opening tag</li>
-          <li>The closing tag</li>
-          <li>The actual element</li>
-        </ol>
+          <h3>Why should you learn HTML?</h3>
 
-        <p>
-          You can learn more at
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-            target="_blank"
-            >MDN Web Docs</a
-          >.
-        </p>
+          <p>
+            There are countless reasons for learning the fundamental language of
+            the web. Here are 5 of them:
+          </p>
 
-        <h3>Why should you learn HTML?</h3>
+          <ul>
+            <li class="first-li">
+              To be able to use the fundamental web dev language
+            </li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends</li>
+            <li>To have fun 😃</li>
+          </ul>
 
-        <p>
-          There are countless reasons for learning the fundamental language of
-          the web. Here are 5 of them:
-        </p>
+          <p>Hopefully you learned something new here. See you next time!</p>
+        </article>
+        <aside>
+          <h4>Related posts</h4>
 
-        <ul>
-          <li class="first-li">
-            To be able to use the fundamental web dev language
-          </li>
-          <li>
-            To hand-craft beautiful websites instead of relying on tools like
-            Worpress or Wix
-          </li>
-          <li>To build web applications</li>
-          <li>To impress friends</li>
-          <li>To have fun 😃</li>
-        </ul>
-
-        <p>Hopefully you learned something new here. See you next time!</p>
-      </article>
-
-      <aside>
-        <h4>Related posts</h4>
-
-        <ul class="related">
-          <li>
-            <img
-              src="img/related-1.jpg"
-              alt="Person programming"
-              width="75"
-              height="75"
-            />
-            <a href="#">How to Learn Web Development</a>
-            <p class="related-author">By Jonas Schmedtmann</p>
-          </li>
-          <li>
-            <img
-              src="img/related-2.jpg"
-              alt="Lightning"
-              width="75"
-              height="75"
-            />
-            <a href="#">The Unknown Powers of CSS</a>
-            <p class="related-author">By Jim Dillon</p>
-          </li>
-          <li>
-            <img
-              src="img/related-3.jpg"
-              alt="JavaScript code on a screen"
-              width="75"
-              height="75"
-            />
-            <a href="#">Why JavaScript is Awesome</a>
-            <p class="related-author">By Matilda</p>
-          </li>
-        </ul>
-      </aside>
+          <ul class="related">
+            <li class="related-post">
+              <img
+                src="img/related-1.jpg"
+                alt="Person programming"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a href="#" class="related-link"
+                  >How to Learn Web Development</a
+                >
+                <p class="related-author">By Jonas Schmedtmann</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                src="img/related-2.jpg"
+                alt="Lightning"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a class="related-link" href="#">The Unknown Powers of CSS</a>
+                <p class="related-author">By Jim Dillon</p>
+              </div>
+            </li>
+            <li class="related-post">
+              <img
+                src="img/related-3.jpg"
+                alt="JavaScript code on a screen"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a class="related-link" href="#">Why JavaScript is Awesome</a>
+                <p class="related-author">By Matilda</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      <!-- </div> -->
 
       <footer>
         <p id="copyright" class="copyright text">
