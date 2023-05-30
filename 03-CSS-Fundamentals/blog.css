@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.article {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+.article-top {
+  background-color: #f7f7f7;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.price {
+  font-size: 24px;
+}
+.label {
+  text-transform: uppercase;
+}
+.shipping {
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.tag-line {
+  margin-bottom: 10px;
+}
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+.details-title {
+  margin-top: 30px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid black;
+}
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.sale-btn {
+  background-color: #ec2f2f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  left: -38px;
+  top: -17px;
+  border: none;
+}
+
+.colors {
+  margin-top: 20px;
+}
+
+.colors div {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: gold;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.brown {
+  background-color: brown;
+}
