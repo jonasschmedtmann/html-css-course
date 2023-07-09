@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el {
+        text-align: center;
+        /* flex-grow: 0; 
+        flex-shrink: 1;
+        flex-basis: auto; DEFAULT VALUES*/
+
+        /* flex-basis: 50px;  */
+        /*recommended length*/
+        /* flex-shrink: 1; */
+        /* flex-grow: 1; */
+        flex: 1 0 50px;
+
+        /* margin-right: 20px; prefer use gap */
+      }
+      .el--1 {
+        background-color: blueviolet;
+        align-self: flex-start;
+        /* flex-grow: 2; */
+      }
+      .el--2 {
+        background-color: orangered;
+        /* order: 1; */
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+        align-self: stretch;
+      }
+      .el--5 {
+        background-color: palevioletred;
+        /* flex-grow: 1; */
+      }
+      .el--6 {
+        background-color: steelblue;
+        /* order: -1; */
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 34px;
+        margin: 40px;
+
+        /* FLEXBOX */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">languages</div>
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
+    </div>
+  </body>
+</html>

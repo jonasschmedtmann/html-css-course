@@ -1,0 +1,327 @@
+* {
+  /* universal selector */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: #444;
+}
+
+.container {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 75px;
+  row-gap: 60px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+
+  /* GRID */
+  grid-column: 1 /-1;
+}
+
+article {
+  /* GRID */
+  grid-column: 1 / -2;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 3px solid #1098ad;
+  border-bottom: 3px solid #1098ad;
+  padding: 50px 20px;
+  /* GRID */
+  grid-column: -1 / -2;
+  align-self: start;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  /* GRID */
+  grid-column: 1 / -1;
+}
+footer p {
+  margin-bottom: 0;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  /* color: blue; */
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+nav a:link {
+  display: inline-block;
+  /* margin: 10px 30px 0 0; */
+
+  /* display: block;
+  margin: 20px;
+  background-color: orange; */
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* Pseudo Classes*/
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  color: red;
+} 
+
+article p:last-child { 
+  color: red;
+}*/
+
+/* LVHA */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #444;
+}
+a:hover {
+  color: orangered;
+  font-weight: 600;
+  text-decoration: underline orangered;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.likeBtn {
+  font-size: 22px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  /* Position attributes */
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+
+/* pseudo elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  color: black;
+}
+
+/* FLEX BOX */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header nav {
+  display: flex;
+  gap: 40px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.related-post {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.main-rows {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.main-rows aside {
+  flex: 1;
+}
+.main-rows aside {
+  flex: 0 0 300px;
+}
+
+/* FLOATS */
+/*
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.author {
+  float: left;
+  margin-left: 10px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  max-width: 65%;
+  float: left;
+}
+
+aside {
+  max-width: 30%;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+*/

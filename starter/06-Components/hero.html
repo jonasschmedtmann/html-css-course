@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Omifood Hero Section</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: Rubik, sans-serif;
+        color: #444;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        /* in relation to PARENT size */
+        top: 50%;
+        left: 50%;
+        /* in relation to ELEMENT size */
+        transform: translate(-50%, -50%);
+      }
+
+      .header-container-inner {
+        width: 50%;
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      header {
+        height: 100vh;
+        color: #f7f7f7;
+        position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.5),
+            rgba(34, 34, 34, 0.5)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+      }
+
+      section {
+        padding: 96px;
+        background-color: #f7f7f7;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="container header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription tah will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div>
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+          voluptas ad dolores laudantium quas nemo assumenda veniam nulla non
+          nobis? Ullam sed dignissimos adipisci eveniet asperiores tenetur neque
+          ducimus modi! Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Qui quam accusamus a quibusdam! Rerum illo maxime eveniet
+          architecto odio amet ut dignissimos numquam culpa natus explicabo,
+          velit placeat quo totam!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

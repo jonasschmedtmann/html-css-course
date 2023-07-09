@@ -26,7 +26,7 @@ Why should you learn HTML?
 There are countless reasons for learning the fundamental language of the web. Here are 5 of them:
 
 To be able to use the fundamental web dev language
-To hand-craft beautiful websites instead of relying on tools like Worpress or Wix
+To hand-craft beautiful websites instead of relying on tools like Wordpress or Wix
 To build web applications
 To impress friends
 To have fun 😃
