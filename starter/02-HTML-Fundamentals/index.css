@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header.magazine {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav a:link {
+  margin: 10px 20px 0 0;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin: 0;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/* *MISCONCEPTION!*
+article p:first-child {
+  color: red;
+} 
+*/
+
+article {
+  margin-bottom: 60px;
+}
+h1 {
+  font-size: 26px;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1,
+h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: 'New!';
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+.coder {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* h3 + p::first-line {
+  color: slateblue;
+} */
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/** LVHA = real world links order.
+*/
+
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: orangered;
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ol {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+li {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin: 0;
+}
+/* 
+li:nth-child(2n) {
+  color: aquamarine;
+}
+ */
+
+ul {
+  margin: 0 60px 0;
+}
+
+ul.nope {
+  list-style: none;
+  margin-left: 0;
+}
+
+#author {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.author-names {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
+}
+
+/* 
+.likeBox {
+  position: relative;
+}
+ */
+
+.likeBtn {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* Floats */
+
+.headshot {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+#headshot-text {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.headshot-text {
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+article {
+  /* background-color: azure; */
+  float: left;
+  width: 825px;
+}
+
+aside {
+  /* float: top; */
+  /* background-color: rgb(207, 227, 171); */
+  float: right;
+  width: 300px;
+}
+
+footer {
+  /* background-color: rgb(150, 218, 218); */
+  clear: both;
+}
