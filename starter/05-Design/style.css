@@ -16,7 +16,9 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #343a40;
+  border-bottom:8px solid #087f5b;
 }
 
 .container {
@@ -31,6 +33,8 @@ section {
 
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
 }
 
 .grid-3-cols {
@@ -38,6 +42,12 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
 }
+
+.grid-3-cols > div > svg {
+  /* Your styles here */
+  align-self: center;
+}
+
 
 /* ------------------------ */
 /* COMPONENT STYLES */
@@ -57,10 +67,40 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 18;
+  line-height: 1.7;
+}
+
+.btn:link,
+.btn:visited {
+  background: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.btn:hover,.btn:active{
+  background-color:#099268;
+  transition: 0.2s all;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
 }
 
 img {
@@ -69,17 +109,28 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  height: 32px;
+  width: 32px;
+  stroke-width: 1.5px;
 }
 
 .features-title {
   margin-bottom: 16px;
+  font-size: 20px;
 }
 
 .features-text {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
+  border-radius: 5px;
 }
 
 .testimonial-box {
@@ -89,20 +140,29 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  font-size: 18;
+  line-height: 1.7;
 }
 
 /* CHAIRS */
+
+.chair{
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
 .chair-box {
   padding: 24px;
 }
 
 h3 {
   margin-bottom: 24px;
+  font-size: 20px;
 }
 
 .chair-details {
@@ -121,14 +181,31 @@ h3 {
   margin-bottom: 0;
 }
 
-.chair-icon {
+.chairs-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
 }
 
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
+
+/* 
+Main #087f5b shade = #099268
+Grey normal text #343a40
+text btn #fff
+text footer #495057
+*/
+
+svg{
+
 }

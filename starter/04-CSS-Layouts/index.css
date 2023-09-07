@@ -20,12 +20,17 @@ body {
 header.magazine {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
+.headshot {
+  width: 50px;
+  height: 50px;
+}
+
 nav a:link {
-  margin: 10px 20px 0 0;
+  margin: 0 30px 0 0;
   display: inline-block;
 }
 
@@ -34,7 +39,7 @@ nav a:link:last-child {
 }
 
 .post-header {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 /* *MISCONCEPTION!*
@@ -111,7 +116,6 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom: 15px;
 }
 
 /** LVHA = real world links order.
@@ -199,8 +203,8 @@ aside {
   right: 50px;
 }
 
-/* Floats */
-
+/* /* /* Floats */
+/*
 .headshot {
   width: 50px;
   height: 50px;
@@ -237,19 +241,107 @@ nav {
 }
 
 article {
-  /* background-color: azure; */
+  /* background-color: azure; 
   float: left;
   width: 825px;
+
+  
 }
 
 aside {
-  /* float: top; */
-  /* background-color: rgb(207, 227, 171); */
+   float: top; 
+   background-color: rgb(207, 227, 171); 
   float: right;
+  width: 300px;
+  
+}
+
+footer {
+  /* background-color: rgb(150, 218, 218); 
+  clear: both;
+}
+*/
+
+/*? FLEXBOX */
+
+.magazine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.headshot-text {
+  margin-left: 15px;
+}
+
+.related-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.author-names {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* 
+/** Old LAYOUT
+**aside should be 300px PLUS gap between article 75px 
+.answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;  Set flex-basis to 300px and prevent it from growing or shrinking 
+}
+ */
+
+/* ? CSS GRID BABY! */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 60px 75px;
+  align-items: start;
+
+}
+
+.magazine {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
   width: 300px;
 }
 
 footer {
-  /* background-color: rgb(150, 218, 218); */
-  clear: both;
+  grid-column: 1 / -1;
+  background-color: #1098ad;
 }

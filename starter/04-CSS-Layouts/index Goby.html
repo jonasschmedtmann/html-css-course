@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <link rel="stylesheet" href="index.css" />
-    <title>myHtml</title>
+    <title>CSS4</title>
   </head>
   <body>
     <div class="container">
@@ -13,8 +13,8 @@
         <nav>
           <a href="blog.html">Blog</a>
           <a href="#">Challenges</a>
-          <a href="#">Flexbox</a>
-          <a href="#">CSS Grid</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">CSS Grid</a>
         </nav>
         <!-- <div class="clear"></div> -->
       </header>
@@ -22,13 +22,13 @@
         <header class="post-header">
           <h2>the basic language of the web: hTML</h2>
 
-          <img class="headshot" src="img/laura-jones.jpg" alt="Whamen" />
-
-          <p id="headshot-text" class="headshot-text">
-            Posted by <strong>Laura Jones</strong> on Monday,
-            <time datetime="2027-06-21">June 21st 2027</time>
-          </p>
-
+          <div class="author-flex">
+            <img class="headshot" src="img/laura-jones.jpg" alt="Whamen" />
+            <p id="headshot-text" class="headshot-text">
+              Posted by <strong>Laura Jones</strong> on Monday,
+              <time datetime="2027-06-21">June 21st 2027</time>
+            </p>
+          </div>
           <img class="coder" src="img/post-img.jpg" alt="code blah" />
         </header>
 
@@ -90,47 +90,49 @@
       <aside>
         <h4>Related Posts</h4>
         <ul class="nope">
-          <li>
+          <li class="related-flex">
             <img
               src="img/related-1.jpg"
               alt="man play pc"
               width="75"
               height="75"
             />
-            <a
-              id="relpos1"
-              href="index.html#relpost1"
-              target="_blank"
-              rel="noopener"
-              >How to Learn Web Development.</a
-            >
-            <p class="author-names">
-              <strong>By Jonas Schmedtmann.</strong>
-            </p>
+            <div class="flex-li">
+              <a class="related-link" id="relpos1" href="#relpost1"
+                >How to Learn Web Development.</a
+              >
+              <p class="author-names">
+                <strong>By Jonas Schmedtmann.</strong>
+              </p>
+            </div>
           </li>
-          <li>
+          <li class="related-flex">
             <img
               src="img/related-2.jpg"
               alt="man play pc"
               width="75"
               height="75"
             />
-            <a id="relpos2" href="#relpost2" target="_blank" rel="noopener"
-              >The Unknown Power of CSS</a
-            >
-            <p class="author-names"><strong>By Cute cat CE.</strong></p>
+            <div class="flex-li">
+              <a class="related-link" id="relpos2" href="#relpost2"
+                >The Unknown Power of CSS</a
+              >
+              <p class="author-names"><strong>By Cute cat CE.</strong></p>
+            </div>
           </li>
-          <li>
+          <li class="related-flex">
             <img
               src="img/related-3.jpg"
               alt="man play pc"
               width="75"
               height="75"
             />
-            <a id="relpos3" href="#relpost3" target="_blank" rel="noopener"
-              >JavaScript is so EZ</a
-            >
-            <p class="author-names"><strong>By Goby Web Dev.</strong></p>
+            <div class="flex-li">
+              <a class="related-link" id="relpos3" href="#relpost3"
+                >JavaScript is so EZ</a
+              >
+              <p class="author-names"><strong>By Goby Web Dev.</strong></p>
+            </div>
           </li>
         </ul>
       </aside>

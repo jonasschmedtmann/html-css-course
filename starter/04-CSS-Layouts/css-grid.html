@@ -36,10 +36,20 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: none;
+        /* display: grid; */
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        /* Shorthand = gap.
+        column-gap: 10px;
+        row-gap: 40px; */
+        gap: 40px 20px;
       }
 
       .container--2 {
@@ -47,12 +57,26 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
-
-        width: 1000px;
+        margin: 40px;
+        width:700px;
         height: 600px;
 
         /* CSS GRID */
+
+        /* display: none; */
+        display: grid;
+
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+        /* Aligning tracks */
+        justify-content: center;
+        /* justify-content: space-evenly; */
+        align-content: center;
+
+        /* Aligning items */
+         align-items: stretch;
+         justify-items: stretch;
       }
     </style>
   </head>
@@ -75,6 +99,10 @@
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
       <div class="el el--7">(7)</div>
+    </div>
+
+    <div class="container--Goby">
+      <a href="index Goby.html">Go back</a>
     </div>
   </body>
 </html>
