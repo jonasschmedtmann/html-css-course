@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <title>Accordion-Component-01</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      Main Color #087f5b
+      Grey Color #343a40
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        background-color: #fff;
+        display: flex;
+        flex-flow: column;
+        gap: 24px;
+      }
+
+      .item {
+        box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+        padding: 24px;
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 32px 24px;
+      }
+
+      .text {
+      }
+
+      svg {
+      }
+
+      .num,
+      .text {
+        font-size: 24px;
+        font-weight: 500;
+
+        /* color: #087f5b; */
+      }
+
+      .num {
+        color: #ced4da;
+      }
+
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+      .hidden-box {
+        grid-column: 2;
+      }
+
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .hidden-box ul {
+        color: #868e96;
+        margin-left: 20px;
+        display: flex;
+        gap: 12px;
+        flex-flow: column;
+        /* list-style: none; */
+      }
+
+      .hidden-box {
+        display: none;
+      }
+
+      .selected {
+        border-top: 4px solid #087f5b;
+      }
+
+      .selected .text,
+      .selected .num {
+        font-weight: 500;
+        color: #087f5b;
+      }
+
+      .selected .hidden-box {
+        display: block;
+      }
+
+      /* .accordion div:not(:nth-child(2)) .hidden-box {
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="num">01</p>
+        <p class="text">Where are these chairs assembled?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+            tempore tempora commodi odit voluptate alias earum nostrum laborum,
+            rerum modi error excepturi, accusamus eaque minus iste qui, expedita
+            ea est.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia.
+            </li>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item selected">
+        <p class="num">02</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+            tempore tempora commodi odit voluptate alias earum nostrum laborum,
+            rerum modi error excepturi, accusamus eaque minus iste qui, expedita
+            ea est.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia.
+            </li>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="num">03</p>
+        <p class="text">Do you ship to countries outside the EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+            tempore tempora commodi odit voluptate alias earum nostrum laborum,
+            rerum modi error excepturi, accusamus eaque minus iste qui, expedita
+            ea est.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia.
+            </li>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
