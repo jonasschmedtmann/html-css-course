@@ -61,10 +61,25 @@
       section {
         background-color: #e9ecef;
         padding: 40px;
+        overflow: scroll;
+
+        /* 
+          <!-- TODO --> DEL 
+        */
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+        justify-content: start;
       }
       .email {
         background-color: #adb5bd;
         height: 96px;
+
+        /* <!-- ? Flexbox treats TEXT as flex-item --> */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 auto;
       }
       aside {
         background-color: #e9ecef;

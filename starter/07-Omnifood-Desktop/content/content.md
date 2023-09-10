@@ -126,3 +126,18 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+## Sections
+
+- Navigation
+- Hero (Landing Page)
+- Features
+- How it works
+- Diets
+- Meals
+- CTA(want sing up form here)
+- 2 Pricing plans
+- Gallery
+- Testimonials
+- Featured in
+- Footer (C)
