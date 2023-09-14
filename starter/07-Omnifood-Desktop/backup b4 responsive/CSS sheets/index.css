@@ -1,0 +1,606 @@
+/*! Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.logo {
+  height: 2.2rem;
+}
+
+/*? End header **/
+/*! Navigation */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  /* font-size: 2rem; */
+  /* font-weight: 600; */
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  background-color: #e67e22;
+  color: #fff;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  /* font-size: 2rem; */
+  /* font-weight: 600; */
+  background-color: #cf711f;
+}
+/*? End navigation **/
+/** Hero section **/
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  display: grid;
+  max-width: 130rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.step-img-box {
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 50%;
+}
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+.hero-image {
+  width: 100%;
+}
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+.delivered-imgs {
+  display: flex;
+  gap: -104px;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  /*? Specify width for Safari browser */
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+/*? End hero section **/
+
+/*! Featured in */
+
+.featured-in {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.featured-in-text {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos-box img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 0.5;
+}
+
+/*? End featured in **/
+
+/*! How it works */
+.section-how {
+  padding: 9.6rem 0;
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img {
+  width: 35%;
+}
+/*? End how it works **/
+/*! Meals Section   */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-name {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-image {
+  width: 100%;
+  /* border-radius: 1.1rem 1.1rem 0 0;
+  OR just use overflow:hidden in parent */
+}
+
+.meal-description-box {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tag {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  color: #333;
+  border-radius: 100000px;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #c0eb75;
+}
+.tag--paleo {
+  /* background-color: #ffe066; */
+  background-color: #ffc078;
+}
+
+.meal-name {
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/*? End meals section  **/
+
+/*! Testimonial section  **/
+
+.section-testimonial {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 0.55fr 0.45fr;
+  align-items: center;
+}
+
+.testimonial-heading-box {
+  padding: 9.6rem;
+  /* padding: 9.6rem 5rem 9.6rem 9.6rem; */
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 4.8rem 6.4rem; */
+  gap: 4.8rem 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.6rem;
+  gap: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/*? end testimonial section  **/
+
+/*! Pricing  **/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::before {
+  content: 'best value';
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  background-color: #ffc078;
+  color: #333;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+/* .pricing-plan:first-child {
+  justify-self: end;
+} */
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 3.2em;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.plan-sign-up {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+
+/*? end pricing  **/
+
+/*! Feature  **/
+
+.plan-detail {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/*? end feature  **/
+/*! CTA Section **/
+
+.section-cta {
+
+  /*@ top horizontal bottom  3 values*/
+  padding: 4.8rem 0 12.8rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #cf711f;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #eb964c, #cf711f);
+}
+
+.cta-text-box {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background: linear-gradient(
+      to bottom right,
+      rgba(235, 150, 76, 0.35),
+      rgba(207, 113, 31, 0.35)
+    ),
+    url('../content/img/eating.jpg') center center/cover;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem 3.2rem;
+
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  /** entire parent's width */
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 9px;
+  background-color: #fdf2d9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+/* .cta-form option{
+  color: #aaa;
+} */
+
+.cta-form option:first-child {
+  color: #aaa;
+}
+
+.cta-form button {
+  font-family: inherit;
+}
+
+.cta *:focus {
+  outline: none;
+  /* outline:4px dotted #e67e22 */
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/*? end CTA  **/
+/*! Footer   **/
+footer{
+  padding: 12.8rem 0;
+  border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+.grid--footer{
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col{
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-social{
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+}
+
+.social-icon{
+  font-size: 3.2rem;
+}
+
+.copyright{
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+
+  margin-top: auto;
+}
+
+.footer-heading{
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contact{
+  font-style: normal;
+  font-size: 1.6em;
+
+  /*@ whole address */
+  line-height: 1.6;
+}
+
+.address{
+  margin-bottom: 2.4rem;
+}
+
+.footer-link:link,.footer-link:visited{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,.footer-link:active{
+  color: #555;
+}
+
+.footer-nav{
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 2.4rem;
+}
+
+/*? end Footer  **/

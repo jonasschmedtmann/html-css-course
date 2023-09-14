@@ -1,0 +1,241 @@
+/*
+  /** 1.Typography
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  -Font weight
+  Default: 400
+  500
+  600
+  700
+
+  -Line heights
+  Default: 1
+  1.05
+  1.2
+  1.6
+
+  -Letter spacing
+  -0.5px
+  0.75px
+
+  /** 2.Colors
+  Main Color: #e67e22
+  Tint: #fdf2e9 #fae5d3
+  Shade:#cf711f
+  Accent Color:
+  Grey Color #555, #333 #6f6f6f
+
+  /** 5.Shadows
+
+  /** 6.Border radius
+
+  default: 9px
+
+  /** 7.White space
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+  /* outline:4px dotted #e67e22 */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.8);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+/*! General components **/
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.9rem;
+  transition: all 0.3s;
+
+  /** only for .btn */
+  border: none;
+  cursor: pointer;
+}
+
+.btn--form {
+  color: #fdf2d9;
+  background-color: #45260a;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover{
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  font-size: 3rem;
+  color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.disable {
+  opacity: 0;
+}
+
+/*? End general components **/
+/*! Helper classes */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.container {
+  /* some web use 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem 6.4rem;
+}
+
+/* No need because :not()
+.grid:last-child {
+  margin-bottom: 0rem;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--center-vertically {
+  align-items: center;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/*? End helper classes **/

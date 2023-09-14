@@ -1,3 +1,5 @@
+[Original Repo](https://github.com/jonasschmedtmann/html-css-course)
+
 # Omnifood
 
 ## About Omnifood
@@ -115,29 +117,31 @@ Social profiles: instagram, facebook, twitter [links to them not available yet]
 
 ### Additional links [links not available yet]
 
+#### Account
 Create account
 Sign in
 iOS app
 Android app
+
+#### About
 About Omnifood
 For Business
 Cooking partners
 Careers
+
+#### Resources
 Recipe directory
 Help center
 Privacy & terms
 
 ## Sections
 
-- Navigation
+- Logo + Navigation
 - Hero (Landing Page)
-- Features
-- How it works
-- Diets
-- Meals
-- CTA(want sing up form here)
-- 2 Pricing plans
-- Gallery
-- Testimonials
 - Featured in
+- How it works
+- Meals + List of Diets
+- Testimonials + Gallery (side by side)
+- 2 Pricing plans (b4 CTA) + Features of each plan
+- CTA(want sing up form here)
 - Footer (C)
