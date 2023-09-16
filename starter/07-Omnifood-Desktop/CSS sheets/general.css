@@ -20,7 +20,7 @@
   0.75px
 
   /** 2.Colors
-  Main Color: #e67e22
+  Main Color: #e67e22 #eff67e22
   Tint: #fdf2e9 #fae5d3
   Shade:#cf711f
   Accent Color:
@@ -52,12 +52,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /*! General components **/
 
@@ -159,6 +162,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
