@@ -57,5 +57,4 @@ Use starter code to start each section, and **final code to compare it with your
 **A:** No. I provide professional English captions, but Udemy is responsible for subtitles in all other languages (automatic translations). So please [contact the Udemy support team](https://support.udemy.com/hc/en-us) to request your own language.
 
 ### Q13: Do you accept pull requests?
-
-**A:** No, for the simple reason that I want this repository to contain the _exact_ same code that is shown in the videos. However, please feel free to add an issue if you found one.
+rwdhbdkqdwbuimn nwdbiuohq;*A:** No, for the simple reason that I want this repository to contain the _exact_ same code that is shown in the videos. However, please feel free to add an issue if you found one.
