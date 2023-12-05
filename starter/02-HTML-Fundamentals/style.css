@@ -77,3 +77,25 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  background-color: rebeccapurple;
+}
+
+li:nth-child(2) {
+  font-style: italic;
+  font-size: 20px;
+}
+
+li:nth-child(odd) {
+  color: #7ad052;
+}
+
+article header p:first-child {
+  font-weight: bold;
+  font-style: italic;
+}
