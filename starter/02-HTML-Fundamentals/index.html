@@ -26,7 +26,9 @@
           width="50"
           height="50"
         />
-        <p>Posted by <strong>Laura Jones on Monday</strong> , June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones on Monday</strong> , June 21st 2027
+        </p>
         <img
           src="img/post-img.jpg"
           alt="Hmtl code on a screen"
@@ -78,7 +80,7 @@
     </article>
     <aside>
       <h4>Relatives Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="./img/related-1.jpg"
@@ -87,22 +89,22 @@
             alt="person programming"
           />
           <a href="#">How to learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img src="./img/related-2.jpg" width="75" height="75" />
           <a href="#">The unknown rowers of CSS</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img src="./img/related-3.jpg" width="75" height="75" />
           <a href="#">Why JavaScript is awesome?</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
       </ul>
     </aside>
     <footer>
-      <p>Copyright &copy; 2027 by The Code Magazine.</p>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
     </footer>
   </body>
 </html>

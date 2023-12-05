@@ -37,6 +37,7 @@ li {
   font-size: 20px;
 }
 
+/* 
 footer p {
   font-size: 16px;
 }
@@ -44,4 +45,18 @@ footer p {
 article header p {
   font-style: italic;
   background-color: #eee;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
 }
