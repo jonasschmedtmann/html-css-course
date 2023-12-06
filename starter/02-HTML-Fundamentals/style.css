@@ -195,10 +195,10 @@ a:active {
   height: 50px;
 }*/
 
-/* .navigation a:link {
+.navigation a:link {
   margin: 20px;
-  background-color: hotpink;
-  color: black;
+  background-color: #f7f7f7;
   padding: 10px;
-  display: block;
-} */
+  display: inline-block;
+  margin: 20px;
+}
