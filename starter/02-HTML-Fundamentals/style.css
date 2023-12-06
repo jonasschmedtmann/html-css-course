@@ -85,6 +85,7 @@ h4 {
 }
 
 p {
+  display: inline;
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -97,6 +98,7 @@ ol {
 }
 
 li {
+  display: inline;
   font-size: 20px;
   margin-bottom: 10px;
   /* display: inline; */
@@ -193,10 +195,10 @@ a:active {
   height: 50px;
 }*/
 
-.navigation a:link {
+/* .navigation a:link {
   margin: 20px;
   background-color: hotpink;
   color: black;
   padding: 10px;
   display: block;
-}
+} */
