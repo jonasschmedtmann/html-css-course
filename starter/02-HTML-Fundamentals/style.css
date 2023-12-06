@@ -1,10 +1,11 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+* {
+  font-weight: 100;
+  font-style: italic;
+}
+
+body {
+  font-weight: 600;
+  font-style: normal;
 }
 
 h1,
@@ -137,4 +138,14 @@ a:active {
 
 footer p {
   color: rebeccapurple;
+}
+
+nav a:link,
+nav strong {
+  font-size: 30px;
+}
+
+nav {
+  color: blue;
+  font-style: italic;
 }
