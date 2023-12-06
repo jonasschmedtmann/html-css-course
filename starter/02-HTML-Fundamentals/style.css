@@ -186,9 +186,9 @@ a:active {
   height: auto;
 }
 
-/*.navigation {
-  height: 50px;
-}*/
+.navigation {
+  text-align: center;
+}
 
 .navigation a:link {
   margin: 20px;
