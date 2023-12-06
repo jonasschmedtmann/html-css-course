@@ -14,10 +14,10 @@ body {
 }
 
 .container {
-  width: 800px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin: 0 auto;
+  width: 1200px;
+  /* margin: 0 auto;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-header {
@@ -183,3 +183,20 @@ a:active {
   font-style: italic;
 }
 /* LVHA */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/*.navigation {
+  height: 50px;
+}*/
+
+.navigation a:link {
+  margin: 20px;
+  background-color: hotpink;
+  color: black;
+  padding: 10px;
+  display: block;
+}
