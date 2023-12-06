@@ -224,3 +224,15 @@ h3 + p::first-line {
   background-color: black;
   font-size: 10px;
 }
+
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+}
