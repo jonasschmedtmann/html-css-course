@@ -1,21 +1,66 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
 }
 
+/* PAGE SECTIONS */
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 900px;
+  /* margin: 0 auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
-h3,
-h4 {
+h3 {
   color: #1098ad;
 }
 
 h1 {
-  color: blue;
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
@@ -23,10 +68,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -36,22 +84,35 @@ h4 {
 }
 
 p {
+  display: inline;
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
+  display: inline;
   font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
 }
 
-/* 
-footer p {
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
   font-size: 16px;
-}
+} */
 
-article header p {
+/* article header p {
   font-style: italic;
-  background-color: #eee;
 } */
 
 #author {
@@ -59,65 +120,119 @@ article header p {
   font-size: 18px;
 }
 
+#copyright {
+  font-size: 16px;
+}
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
 }
 
+/* ul {
+  list-style: none;
+} */
+
 .related {
   list-style: none;
 }
 
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
+/* .first-li {
+  font-weight: bold;
+} */
 
 li:first-child {
   font-weight: bold;
 }
 
 li:last-child {
-  background-color: rebeccapurple;
-}
-
-li:nth-child(2) {
-  font-style: italic;
-  font-size: 20px;
-}
-
-li:nth-child(odd) {
-  color: #7ad052;
-}
-
-article header p:first-child {
-  font-weight: bold;
   font-style: italic;
 }
 
-/*Hierarchy is L(link)->V(visited)->H(hover)->A(active)*/
-/*if a element includes the href property then link pseudo class works*/
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* Misconception: this won't work! */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
 a:link {
   color: #1098ad;
   text-decoration: none;
 }
+
 a:visited {
+  /* color: #777; */
   color: #1098ad;
 }
 
 a:hover {
   color: orangered;
-  text-decoration: underline wavy orangered;
   font-weight: bold;
+  text-decoration: underline orangered;
 }
 
-/*When the link is being clicked active pseudo class works*/
 a:active {
   background-color: black;
   font-style: italic;
+}
+/* LVHA */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/*.navigation {
+  height: 50px;
+}*/
+
+.navigation a:link {
+  margin: 20px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.like {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  border-radius: 10px;
+}
+
+/*Pseudo Elements with :: Pseudo Class with :*/
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+a::first-line {
+  background-color: orangered;
+}
+
+h3 + p::first-line {
+  color: white;
+  background-color: black;
+  font-size: 10px;
+}
+
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
 }
