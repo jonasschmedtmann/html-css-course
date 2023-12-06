@@ -8,16 +8,15 @@
 body {
   color: #444;
   font-family: sans-serif;
-
   border-top: 10px solid #1098ad;
-  position: relative;
 }
 
 .container {
-  width: 1200px;
+  width: 900px;
   /* margin: 0 auto;*/
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .main-header {
@@ -138,10 +137,6 @@ li:last-child {
   list-style: none;
 }
 
-body {
-  /* background-color: orangered; */
-}
-
 /* .first-li {
   font-weight: bold;
 } */
@@ -201,4 +196,31 @@ a:active {
   padding: 10px;
   display: inline-block;
   margin: 20px;
+}
+
+.like {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  border-radius: 10px;
+}
+
+/*Pseudo Elements with :: Pseudo Class with :*/
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+a::first-line {
+  background-color: orangered;
+}
+
+h3 + p::first-line {
+  color: white;
+  background-color: black;
+  font-size: 10px;
 }
