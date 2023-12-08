@@ -281,3 +281,10 @@ nav p {
   float: left;
   margin: 20px 20px;
 }
+
+.clearfix::after {
+  /*after ile last-child , before ile container içerisine first child olarak eklenir*/
+  clear: both;
+  content: "";
+  display: block;
+}
