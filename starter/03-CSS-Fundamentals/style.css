@@ -8,13 +8,12 @@
 body {
   color: #444;
   font-family: sans-serif;
-
   border-top: 10px solid #1098ad;
   position: relative;
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -111,14 +110,6 @@ li:last-child {
   margin-bottom: 0;
 }
 
-/* footer p {
-  font-size: 16px;
-} */
-
-/* article header p {
-  font-style: italic;
-} */
-
 #author {
   font-style: italic;
   font-size: 18px;
@@ -132,22 +123,9 @@ li:last-child {
   font-size: 18px;
   font-weight: bold;
 }
-
-/* ul {
-  list-style: none;
-} */
-
 .related {
   list-style: none;
 }
-
-body {
-  /* background-color: orangered; */
-}
-
-/* .first-li {
-  font-weight: bold;
-} */
 
 li:first-child {
   font-weight: bold;
@@ -287,4 +265,18 @@ nav p {
   clear: both;
   content: "";
   display: block;
+}
+
+article {
+  float: left;
+  width: 870px;
+}
+
+aside {
+  float: right;
+  width: 300px;
+}
+
+footer {
+  clear: both;
 }
