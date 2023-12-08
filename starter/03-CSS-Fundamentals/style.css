@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -86,6 +87,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -96,8 +98,8 @@ p {
 
 ul,
 ol {
-  margin-left: 50px;
   margin-bottom: 20px;
+  list-style: none;
 }
 
 li {
@@ -126,10 +128,10 @@ li:last-child {
 .related {
   list-style: none;
 }
-
+/* 
 li:first-child {
   font-weight: bold;
-}
+} */
 
 li:last-child {
   font-style: italic;
@@ -275,6 +277,9 @@ article {
 aside {
   float: right;
   width: 300px;
+  margin: 0;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
 
 footer {
