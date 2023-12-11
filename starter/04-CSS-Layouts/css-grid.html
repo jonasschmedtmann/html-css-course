@@ -14,7 +14,6 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -38,8 +37,12 @@
         background-color: #ddd;
         font-size: 40px;
         display: grid;
-        grid-template-columns: 250px 200px 400px;
-        grid-template-rows: 250px 100px 200px 50px;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 2fr 1fr 3fr auto;
+        /* grid-template-rows: 250px 100px 200px 50px; */
+        /* grid-template-rows: 1fr 2fr; */
+        grid-template-rows: 2fr auto;
         /* gap: 10px; */
         column-gap: 10px;
         row-gap: 20px;
