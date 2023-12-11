@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -82,6 +82,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 p {
@@ -92,13 +93,13 @@ p {
 
 ul,
 ol {
-  margin-left: 50px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   /* display: inline; */
 }
 
@@ -265,3 +266,61 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+#author {
+  margin-bottom: 0;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+nav a:link {
+  margin-top: 0;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside .related-post {
+  display: flex;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.related-info a:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-info p {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+.row article {
+  flex-basis: 825px;
+  flex-shrink: 0;
+}
+
+.row aside {
+  flex: 1;
+}
