@@ -39,13 +39,15 @@
         display: grid;
         /* grid-template-columns: 1fr 1fr 1fr; */
         /* grid-template-columns: repeat(3, 1fr); */
-        grid-template-columns: 2fr 1fr 3fr auto;
+        grid-template-columns: repeat(3, 1fr);
         /* grid-template-rows: 250px 100px 200px 50px; */
         /* grid-template-rows: 1fr 2fr; */
-        grid-template-rows: 2fr auto;
+        grid-template-rows: repeat(4, 1fr);
         /* gap: 10px; */
-        column-gap: 10px;
-        row-gap: 20px;
+        column-gap: 20px;
+        row-gap: 40px;
+        height: 500px;
+        width: 700px;
 
         /* CSS GRID */
       }
@@ -62,6 +64,16 @@
         height: 600px;
 
         /* CSS GRID */
+      }
+
+      .el--1 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+      }
+
+      .el--4 {
+        grid-column: 2/3;
+        grid-row: 4/5;
       }
     </style>
   </head>
