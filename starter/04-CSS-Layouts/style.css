@@ -310,7 +310,7 @@ aside .related-post {
   font-style: italic;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   align-items: flex-start;
@@ -323,4 +323,26 @@ aside .related-post {
 
 .row aside {
   flex: 1;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+}
+
+.main-header {
+  /* grid-column: 1/-1; */
+  /* grid-column: 1/3; */
+  grid-column: 1 / span 2;
+  justify-content: center;
+  justify-items: center;
+}
+
+aside {
+  align-self: flex-start;
+}
+
+aside li {
+  margin: 20px 20px;
 }
