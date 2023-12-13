@@ -81,6 +81,7 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 .btn:link,
@@ -91,6 +92,7 @@ img {
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
+  border-radius: 100px;
 }
 /*btn pseudo class order is link, visited, hover, active*/
 .btn:hover,
@@ -119,6 +121,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 25px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -141,6 +144,12 @@ img {
 /* CHAIRS */
 .chair {
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .chair-box {
