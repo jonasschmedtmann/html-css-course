@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;600;700&family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Titillium+Web:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Carousel Component</title>
+    <style>
+      /*
+              SPACING SYSTEM (px)
+              2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+              FONT SIZE SYSTEM (px)
+              10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+              */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pagination {
+        margin-top: 100px;
+        background-color: #e9ecef;
+        padding: 16px 24px;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        font-size: 16px;
+      }
+
+      .pagination button {
+        background-color: #fff;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border: none;
+        border-radius: 50%;
+        border: 1px solid #087f5b;
+      }
+
+      .page-btn:link,
+      .page-btn:visited {
+        display: inline-block;
+        text-align: center;
+        color: #343a40;
+        text-decoration: none;
+        padding: 8px;
+        font-weight: bold;
+        height: 32px;
+        width: 32px;
+        align-self: center;
+      }
+
+      .pagination a.page-btn:hover,
+      .pagination a.page-btn:active {
+        background-color: #087f5b;
+        color: #fff;
+        border-radius: 50%;
+      }
+
+      button .btn-pagination {
+        stroke: #087f5b;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #087f5b;
+      }
+
+      button:hover .btn-pagination {
+        stroke: #fff;
+      }
+
+      .pagination span {
+        cursor: pointer;
+        color: #adb5bd;
+      }
+
+      .active.page-btn {
+        /*Selector Specificity değerine göre declaration rules uygulanır eşitse sayfa son okunanı uygular*/
+        background-color: #087f5b;
+        color: #fff;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="btn btn--previous">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-pagination"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a href="#" class="page-btn">1</a>
+      <a href="#" class="page-btn">2</a>
+      <a href="#" class="page-btn active">3</a>
+      <a href="#" class="page-btn">4</a>
+      <a href="#" class="page-btn">5</a>
+      <a href="#" class="page-btn">6</a>
+      <span>...</span>
+      <a href="#" class="page-btn">12</a>
+      <button class="btn btn--next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-pagination"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
