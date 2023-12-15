@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;600;700&family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Rubik:wght@500;600;700&family=Titillium+Web:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero Component</title>
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #343a40;
+      }
+
+      header {
+        height: 100vh;
+        position: relative;
+        color: #fff;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(./hero.jpg); /*background-image stack gibi kullanarak önce tanımlanan üstte olacak şekilde render edilir*/
+        background-size: cover;
+      }
+
+      nav {
+        padding: 32px 0;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+        /* background-image: linear-gradient(to right, green, rebeccapurple); */
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 64px;
+        line-height: 1.6;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #e67e22;
+        text-decoration: none;
+        padding: 16px 32px;
+        display: inline-block;
+        border-radius: 9px;
+      }
+
+      section {
+        padding: 96px 0;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .hero-container {
+        width: 1200px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container-inner {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+        <div class="hero-container">
+          <div class="container-inner">
+            <h1>A healty meal delivered to your door, every single day</h1>
+            <p>
+              The smart 365 days-per-year food subscription that will make you
+              eat healty again. Tailored to your personal tastes and nutritional
+              needs
+            </p>
+            <a class="btn" href="#">Start eating well</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rerum
+          consequuntur officiis nostrum neque, eius praesentium doloremque
+          tempore odio. Exercitationem esse perspiciatis impedit fuga soluta.
+          Animi minima consectetur sit possimus voluptates nihil eveniet
+          voluptate. Porro similique cumque ad dolor tempora.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
