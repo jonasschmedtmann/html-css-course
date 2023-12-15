@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;600;700&family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Titillium+Web:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+      }
+
+      .row {
+        display: flex;
+        height: 100vh;
+      }
+
+      .nav {
+        background-color: #343a40;
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 24px 16px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px 1fr;
+        width: 100%;
+      }
+
+      nav {
+        /* grid-column: 1/-1; */
+        /* grid-column: 1/4; */
+        grid-column: 1 / span 3;
+        background-color: rgb(74, 39, 200);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+      }
+
+      nav .email-buttons {
+        display: flex;
+        gap: 16px;
+      }
+
+      nav a {
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #4e28a0;
+      }
+
+      nav a.btn--trash {
+        background-color: red;
+      }
+
+      .inbound-box {
+        background-color: #ddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 48px;
+        padding-top: 24px;
+      }
+
+      .inbound-box a {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        color: #343a40;
+        font-size: 24px;
+        background-color: #eee;
+        display: inline-block;
+        padding: 16px 32px;
+        width: 250px;
+        height: 80px;
+      }
+
+      .email-view {
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .email-view p {
+        text-align: center;
+        padding: 48px 32px;
+      }
+
+      .email-additional-info {
+        background-color: #ddd;
+      }
+      .email-additional-info p {
+        text-align: center;
+        padding: 48px 32px;
+        font-weight: 600;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <section class="nav">Nav</section>
+      <section class="container">
+        <nav>
+          <div class="email-buttons">
+            <a href="#" class="btn">New</a>
+            <a href="#" class="btn">Reply</a>
+            <a href="#" class="btn">Forward</a>
+            <a href="#" class="btn">Mark unread</a>
+          </div>
+          <a href="#" class="btn btn--trash">Trash</a>
+        </nav>
+        <section class="inbound-box">
+          <a href="#" class="btn--email">Email 1</a>
+          <a href="#" class="btn--email">Email 2</a>
+          <a href="#" class="btn--email">Email 3</a>
+          <a href="#" class="btn--email">Email 4</a>
+          <a href="#" class="btn--email">Email 5</a>
+          <a href="#" class="btn--email">Email 6</a>
+          <a href="#" class="btn--email">Email 7</a>
+          <a href="#" class="btn--email">Email 8</a>
+          <a href="#" class="btn--email">Email 9</a>
+          <a href="#" class="btn--email">Email 10</a>
+          <a href="#" class="btn--email">Email 11</a>
+        </section>
+        <section class="email-view">
+          <p class="email-view-text">Email view</p>
+        </section>
+        <section class="email-additional-info">
+          <p class="email-additional-text">Additional Info</p>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
