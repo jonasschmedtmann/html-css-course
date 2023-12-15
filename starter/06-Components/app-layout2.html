@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;600;700&family=Montserrat&family=Oleo+Script:wght@700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&family=Titillium+Web:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      nav,
+      section,
+      aside,
+      main {
+        padding-top: 24px;
+      }
+
+      nav {
+        background-color: #495057;
+        grid-row: 1/-1;
+        color: #fff;
+      }
+
+      menu {
+        background-color: #6741d9;
+        grid-column: 2/-1;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 0px 40px;
+      }
+
+      menu button {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #5f3dc4;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        padding: 8px 12px;
+      }
+
+      button:last-child {
+        margin-left: auto;
+        background-color: #c2255c;
+      }
+
+      section {
+        background-color: #e9ecef;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        /* flex-shrik default olarak 1 geldiği için önce itemları küçültme yoluna gider. Flex-shrink 0 ise scroll yöntemine başvurur*/
+        overflow: scroll;
+      }
+
+      section .mail {
+        background-color: #adb5bd;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      aside {
+        background-color: #e9ecef;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button class="btn">New</button>
+      <button class="btn">Reply</button>
+      <button class="btn">Forward</button>
+      <button class="btn">Mark unread</button>
+      <button class="btn">Trash</button>
+    </menu>
+    <section>
+      <div class="mail">Email 1</div>
+      <div class="mail">Email 2</div>
+      <div class="mail">Email 3</div>
+      <div class="mail">Email 4</div>
+      <div class="mail">Email 5</div>
+      <div class="mail">Email 6</div>
+      <div class="mail">Email 7</div>
+      <div class="mail">Email 8</div>
+      <div class="mail">Email 9</div>
+      <div class="mail">Email 10</div>
+    </section>
+    <main>Email view</main>
+    <aside>Smt. Extra</aside>
+  </body>
+</html>
