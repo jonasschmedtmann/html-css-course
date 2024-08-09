@@ -1,5 +1,8 @@
 # Course Material and FAQ for "Build Responsive Real-World Websites with HTML and CSS."
-## This is Michael's Work
+
+## This is Michael's Work.
+
+## Second Commit
 
 This repo contains starter files and final code for all sections and projects contained in the course.
 
