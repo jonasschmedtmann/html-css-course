@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accodion-01</title>
+
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      line-height: 1;
+      font-family: sans-serif;
+      word-spacing: 1.5;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .accodion {
+      width: 700px;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      column-gap: 30px;
+      row-gap: 40px;
+      box-shadow: 0 0 15px #111111;
+      margin: 30px 30px;
+      padding: 30px;
+    }
+
+    /* Laybouts */
+    .questiont-box {}
+
+    .answer-box {
+      grid-column: 2/2;
+      display: none;
+    }
+
+    .number {
+      font-size: 28px;
+      color: #4e4d4d;
+    }
+
+    .question {
+      font-size: 28px;
+      color: #4e4d4d;
+    }
+
+    .arrow-down {
+      width: 24px;
+      height: 24px;
+      color: green;
+    }
+
+    .answer-text {
+      color: rgb(30, 29, 29);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .answer-list {
+      color: rgb(102, 102, 102);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .answer-list-item {
+      margin-left: 20px;
+    }
+
+    .open {
+      border-top: 5px solid green;
+    }
+
+    .open .answer-box {
+      display: block;
+    }
+
+    .open .number,
+    .open .question {
+      color: green;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="accodion">
+    <div class="item open">
+      <p class="number">01</p>
+      <p class="question">How long do i have to return my chair?</p>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="arrow-down">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+      <div class="answer-box">
+        <p class="answer-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt, dolore, sint
+          praesentium
+          quis laborum esse ad quaerat quas corrupti, alias aspernatur! Ipsum, molestias? Deserunt iusto commodi itaque
+          eum
+          quae?</p>
+        <ul class="answer-list">
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item">
+      <p class="number">02</p>
+      <p class="question">How long do i have to return my chair?</p>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="arrow-down">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+      <div class="answer-box">
+        <p class="answer-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt, dolore, sint
+          praesentium
+          quis laborum esse ad quaerat quas corrupti, alias aspernatur! Ipsum, molestias? Deserunt iusto commodi itaque
+          eum
+          quae?</p>
+        <ul class="answer-list">
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </ul>
+      </div>
+    </div>
+    <div class="item">
+      <p class="number">03</p>
+      <p class="question">How long do i have to return my chair?</p>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="arrow-down">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+      <div class="answer-box">
+        <p class="answer-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nesciunt, dolore, sint
+          praesentium
+          quis laborum esse ad quaerat quas corrupti, alias aspernatur! Ipsum, molestias? Deserunt iusto commodi itaque
+          eum
+          quae?</p>
+        <ul class="answer-list">
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+          <li class="answer-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

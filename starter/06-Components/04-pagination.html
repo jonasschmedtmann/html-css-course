@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComponentName</title>
+
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      display: flex;
+      margin-top: 200px;
+      justify-content: center;
+    }
+
+    .pagination {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      background: none;
+      width: 48px;
+      height: 48px;
+      border: 2px solid green;
+      border-radius: 50%;
+    }
+
+    .btn-icon {
+      height: 24px;
+      width: 24px;
+      stroke: green;
+    }
+
+    .btn:hover {
+      background-color: green;
+    }
+
+    .btn:hover .btn-icon {
+      stroke: white;
+    }
+
+    .page-no,
+    .btn {
+      cursor: pointer;
+    }
+
+    .page-no:link,
+    .page-no:visited {
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      height: 36px;
+      width: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page-no:hover,
+    .page-no:active,
+    .page-no.active-page {
+      background-color: green;
+      color: white;
+      border-radius: 50%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="pagination">
+    <button class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <a href="#" class="page-no">01</a>
+    <a href="#" class="page-no">02</a>
+    <a href="#" class="page-no active-page">03</a>
+    <span>...</span>
+    <a href="#" class="page-no">25</a>
+    <button class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+
+
+</body>
+
+</html>
