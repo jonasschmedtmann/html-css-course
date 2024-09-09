@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #323232;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(4, 181, 181);
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.title::first-letter {
+  font-style: normal;
+}
+
+.subtitle::first-letter {
+  font-size: 50px;
+}
+
+.sub-subtitle::first-letter {
+  font-size: 45px;
+}
+
+.post-img {
+  height: auto;
+  width: 100%;
+  /* position: relative; */
+}
+
+.body-header {
+  /* position: relative; */
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h3 + p::first-letter {
+  font-size: 40px;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  right: -25px;
+  padding: 6px;
+  border: 2px solid black;
+  color: black;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#copyright {
+  font-size: 15px;
+}
+
+#author {
+  font-style: italic;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+ol,
+ul {
+  margin-left: 50px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+li:last-child {
+  margin-bottom: 10px;
+}
+
+.related-author {
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+aside {
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-top: 5px solid #05efe3;
+  border-bottom: 5px solid #05efe3;
+  width: 500px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 720px;
+}
+
+.top-header {
+  background-color: rgb(238, 243, 243);
+  margin-bottom: 20px;
+  padding: 20px 40px;
+}
+
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(2) {
+  font-weight: 100;
+}
+
+li:last-child {
+  font-weight: 800;
+} */
+
+nav a:link {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
+
+a:active {
+  background-color: red;
+}
+
+.like-btn {
+  padding: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

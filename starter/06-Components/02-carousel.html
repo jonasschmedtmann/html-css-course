@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      line-height: 1;
+      font-family: sans-serif;
+    }
+
+    blockquote {
+      color: rgb(255, 255, 255);
+      margin-left: 30px;
+    }
+
+    .carousel {
+      background-color: #099268;
+      display: flex;
+      width: 700px;
+      margin: 100px auto;
+      padding: 30px;
+      gap: 100px;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    .testimony {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0;
+    }
+
+    .testimony-user {
+      grid-column: 2/2;
+    }
+
+    .testimony-user-name {
+      font-size: 14px;
+      margin: 0px;
+      color: #c3fae8;
+    }
+
+    .testimony-user-role {
+      font-size: 12px;
+      margin: 0px;
+      color: #c3fae8;
+    }
+
+    .user-pic {
+      transform: scale(1.5);
+      margin-left: 70px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #060606;
+    }
+
+
+    .btn {
+      stroke: #099268;
+      width: 34px;
+      height: 34px;
+      border-radius: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      position: absolute;
+      top: 50%;
+    }
+
+    .navigate-left {
+      transform: translate(-50%, -50%);
+      left: 0;
+    }
+
+    .navigate-right {
+      transform: translate(50%, -50%);
+      right: 0;
+    }
+
+    .navigates {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      justify-content: space-between;
+      gap: 4px;
+      transform: translate(-50%, 34px);
+    }
+
+    .navigate {
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border: 2px solid #099268;
+      border-radius: 50%;
+    }
+
+    .btn,
+    .navigate {
+      cursor: pointer;
+    }
+
+    .navigate-current {
+      background-color: #099268;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="carousel">
+    <img src="maria.jpg" alt="Maria Taiwan" width="200px" height="200px" class="user-pic">
+    <div class="testimony">
+      <blockquote class="testimony">
+        <p class="testimony-text">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quia nulla accusamus dolor earum ipsum id error
+          laboriosam, itaque reiciendis nemo iste ipsa soluta, sequi quas, architecto vero consectetur porro."
+        </p>
+        <p class="testimony-user-name">
+          Maria Tiwan
+        </p>
+        <p class="testimony-user-role">
+          Senior Manager at T-Systems
+        </p>
+      </blockquote>
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="navigate-left btn">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="navigate-right btn">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+    </svg>
+
+    <div class="navigates">
+      <button class="navigate"> </button>
+      <button class="navigate">&nbsp;</button>
+      <button class="navigate navigate-current">&nbsp;</button>
+      <button class="navigate">&nbsp;</button>
+    </div>
+
+
+
+  </div>
+
+</body>
+
+</html>
