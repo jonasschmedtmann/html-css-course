@@ -1,0 +1,46 @@
+/* ************************* */
+/* How To Steps*/
+/* ************************* */
+.step-description {
+  font-size: 1.8rem;
+}
+
+.step-numbers {
+  font-size: 8.6rem;
+  color: #ddd;
+  font-weight: 700;
+}
+
+.how-to-grid {
+  align-items: center;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.step-img-box::before {
+  width: 60%;
+  background-color: #fdf2e9;
+  padding-bottom: 60%;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  background-color: #f5cba7;
+  padding-bottom: 45%;
+  z-index: -1;
+}

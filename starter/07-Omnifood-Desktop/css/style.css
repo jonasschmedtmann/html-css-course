@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  color: #555;
+}
+
+/* *********************** */
+/* COMMON */
+/* *********************** */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.6rem;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 700;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #b8651b;
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: white;
+  color: #333;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.margin-right-sm {
+  margin-right: 2rem;
+}
+
+.how-img {
+  width: 35%;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  color: #b8651b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  letter-spacing: 0.5px;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+}
+
+.tag {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  font-weight: 600;
+  border-radius: 9px;
+}
+
+.tag-veg {
+  background-color: #8ce99a;
+}
+.tag-vegn {
+  background-color: #ffec99;
+}
+.tag-pal {
+  background-color: #eebefa;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 9px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 2.4rem 6.4rem rgba(0, 0, 0, 0.6);
+}
+
+.margin-top-md {
+  margin-top: 4.8rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}

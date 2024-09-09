@@ -1,0 +1,15 @@
+.form-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50rem;
+  background-image: linear-gradient(to bottom right, #ffe8cc, #fd7e14);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.form-img {
+  background-image: linear-gradient(to bottom right, #ffe8cc60, #fd7d147b),
+    url("../img/eating.jpg");
+  background-size: cover;
+}

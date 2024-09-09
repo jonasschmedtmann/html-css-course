@@ -1,0 +1,67 @@
+.section-meals {
+  margin: 9.6rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-content {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.meal-attribute {
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #eb984e;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.list-item-icon {
+  color: #eb984e;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.list-item-text {
+  font-size: 2rem;
+}
+
+.all-diets-link:link,
+.all-diets-link:visited {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #eb984e;
+  border-bottom: 2px solid currentColor;
+  transition: all 0.3s;
+}
+
+.all-diets-link:hover,
+.all-diets-link:active {
+  color: #b8651b;
+  border-bottom: 2px solid transparent;
+}

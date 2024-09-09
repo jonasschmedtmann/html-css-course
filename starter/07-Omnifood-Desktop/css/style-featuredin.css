@@ -1,0 +1,22 @@
+.section-featured {
+  margin-bottom: 9.6rem;
+  text-align: center;
+}
+.feature-in-text {
+  font-size: 1.8rem;
+  color: #888;
+  margin-bottom: 2.4rem;
+}
+.brand-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 120rem;
+  gap: 6.4rem;
+}
+
+.img-logo {
+  height: 2.8rem;
+  opacity: 50%;
+  filter: brightness(0);
+}
