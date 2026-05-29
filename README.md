@@ -36,7 +36,7 @@ Use starter code to start each section, and **final code to compare it with your
 
 **A:** Unfortunately, there is nothing I can do about it. The course is hosted on Udemy, and sometimes they have technical issues like this. Please just come back a bit later or [contact their support team](https://support.udemy.com/hc/en-us).
 
-### Q8: Videos are blurred / have low quality, can you fix it?
+### Q8: Videos are blurred / have low quality,can you fix it?
 
 **A:** Please open video settings and change the quality from 'Auto' to another value, for example 720p. If that doesn't help, please [contact the Udemy support team](https://support.udemy.com/hc/en-us).
 
